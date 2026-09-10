@@ -7,8 +7,8 @@
 <meta name="description" content="Kobiecy chór z Brwinowa na Mazowszu, śpiewający od 2013 roku. Od muzyki ludowej i piosenki warszawskiej po musical, kolędy i muzykę współczesną.">
 <meta name="theme-color" content="#EDE4D3">
 <meta name="color-scheme" content="light">
-<link rel="icon" type="image/png" sizes="64x64" href="media/cd5e02255e.png">
-<link rel="apple-touch-icon" sizes="180x180" href="media/1922339f3a.png">
+<link rel="icon" type="image/png" sizes="64x64" href="cd5e02255e.png">
+<link rel="apple-touch-icon" sizes="180x180" href="1922339f3a.png">
 
 <!-- udostepnianie: Facebook, Messenger, WhatsApp, LinkedIn -->
 <meta property="og:type" content="website">
@@ -26,8 +26,8 @@
 <meta name="twitter:description" content="Kobiecy chór z Brwinowa na Mazowszu, śpiewający od 2013 roku. Od muzyki ludowej i piosenki warszawskiej po musical, kolędy i muzykę współczesną.">
 <meta name="twitter:image" content="https://chwdk.pl/og.jpg">
 
-<link rel="preload" as="image" href="media/cd5e02255e.png" fetchpriority="high">
-<link rel="preload" as="image" href="media/hero-zespol.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="cd5e02255e.png" fetchpriority="high">
+<link rel="preload" as="image" href="hero-zespol.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap">
@@ -35,7 +35,7 @@
 :root{color-scheme:light}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 img{max-width:100%;height:auto}
-:root{--roz:#E8175D;--por:#F5A623;--blad:#A8C8D0;--krem:#EDE4D3;--dark:#0F0F0F;--mid:#777;--fiolet:#7B3F98;--kura-logo:url(media/a72d95bbba.png);}
+:root{--roz:#E8175D;--por:#F5A623;--blad:#A8C8D0;--krem:#EDE4D3;--dark:#0F0F0F;--mid:#777;--fiolet:#7B3F98;--kura-logo:url(a72d95bbba.png);}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--krem);color:var(--dark);overflow-x:hidden}
 
@@ -409,7 +409,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
 <body>
 
 <nav>
-  <a href="#" class="logo"><img fetchpriority="high" decoding="async" width="64" height="64" src="media/cd5e02255e.png" alt="" class="logo-kura">CHWDK<em>.</em></a>
+  <a href="#" class="logo"><img fetchpriority="high" decoding="async" width="64" height="64" src="cd5e02255e.png" alt="" class="logo-kura">CHWDK<em>.</em></a>
   <ul class="nav-links"><li><a href="#grzeda">Zespół</a></li><li><a href="#reportaz">Posłuchaj</a></li><li><a href="#aktualnosci">Koncerty</a></li><li><a href="#o-nas">Historia</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#english">EN</a></li><li><a href="#zaproszenia">Zaproś nas</a></li></ul>
   <div class="nav-burger" onclick="toggleMenu()" id="burger">
     <span></span><span></span><span></span>
@@ -430,8 +430,8 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
 <!-- HERO -->
 <section class="hero">
   <div class="hero-panel">
-    <img loading="lazy" decoding="async" width="600" height="544" class="hero-kura-bg" src="media/a72d95bbba.png" alt="">
-    <img fetchpriority="high" decoding="async" width="600" height="544" class="hero-kura-accent" src="media/a72d95bbba.png" alt="Logo CHWDK">
+    <img loading="lazy" decoding="async" width="600" height="544" class="hero-kura-bg" src="a72d95bbba.png" alt="">
+    <img fetchpriority="high" decoding="async" width="600" height="544" class="hero-kura-accent" src="a72d95bbba.png" alt="Logo CHWDK">
     <p class="hero-tag">Kobiecy chór z Mazowsza &nbsp;·&nbsp; od 2013</p>
     <h1 class="hero-title">Chór Wydartych <em>Domom Kur</em></h1>
     
@@ -441,7 +441,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
     </div>
   </div>
   <div class="hero-photo">
-    <img fetchpriority="high" decoding="async" width="1600" height="1200" src="media/hero-zespol.jpg" alt="Chór Wydartych Domom Kur">
+    <img fetchpriority="high" decoding="async" width="1600" height="1200" src="hero-zespol.jpg" alt="Chór Wydartych Domom Kur">
   </div>
 </section>
 
@@ -690,36 +690,36 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
 </style>
 
 <script>
-  // SKŁAD CHÓRU — jedna osoba = jedna linia. glos: "sopran" | "mezzosopran" | "alt"; foto: null (bez zdjęcia) albo "media/c-….png".
+  // SKŁAD CHÓRU — jedna osoba = jedna linia. glos: "sopran" | "mezzosopran" | "alt"; foto: null (bez zdjęcia) albo "c-….png".
   // Pozostałe pola (rot, dy, kolor, grzebien, odbicie, skrzydlo) to drobne różnice w wyglądzie kury — przy nowej osobie skopiuj je od sąsiadki.
   var CHOR=[
     {"imie": "Alicja", "glos": "sopran", "foto": null, "rot": -2.5, "dy": -2, "kolor": 0, "grzebien": 1, "odbicie": 0, "skrzydlo": 0},
-    {"imie": "Jagoda", "glos": "sopran", "foto": "media/c-jagoda.png", "rot": 1.6, "dy": 3, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
-    {"imie": "Kasia M.", "glos": "sopran", "foto": "media/c-kasiam.png", "rot": -1.0, "dy": -5, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 1},
-    {"imie": "Kasia W.", "glos": "sopran", "foto": "media/c-kasiaw.png", "rot": 2.0, "dy": 1, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
-    {"imie": "Małgosia", "glos": "sopran", "foto": "media/c-malgosia.png", "rot": -1.6, "dy": 4, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Jagoda", "glos": "sopran", "foto": "c-jagoda.png", "rot": 1.6, "dy": 3, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Kasia M.", "glos": "sopran", "foto": "c-kasiam.png", "rot": -1.0, "dy": -5, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 1},
+    {"imie": "Kasia W.", "glos": "sopran", "foto": "c-kasiaw.png", "rot": 2.0, "dy": 1, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Małgosia", "glos": "sopran", "foto": "c-malgosia.png", "rot": -1.6, "dy": 4, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
     {"imie": "Marta", "glos": "sopran", "foto": null, "rot": 0.6, "dy": -2, "kolor": 1, "grzebien": 1, "odbicie": 1, "skrzydlo": 0},
-    {"imie": "Stella", "glos": "sopran", "foto": "media/c-stella.png", "rot": -2.0, "dy": 2, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
-    {"imie": "Agata O.", "glos": "mezzosopran", "foto": "media/c-agatao.png", "rot": 1.2, "dy": -4, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Stella", "glos": "sopran", "foto": "c-stella.png", "rot": -2.0, "dy": 2, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Agata O.", "glos": "mezzosopran", "foto": "c-agatao.png", "rot": 1.2, "dy": -4, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
     {"imie": "Ania Ż.", "glos": "mezzosopran", "foto": null, "rot": -1.4, "dy": 2, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 1},
     {"imie": "Dobrochna", "glos": "mezzosopran", "foto": null, "rot": 2.4, "dy": -1, "kolor": 1, "grzebien": 1, "odbicie": 1, "skrzydlo": 0},
-    {"imie": "Dorota", "glos": "mezzosopran", "foto": "media/c-dorota.png", "rot": -0.6, "dy": 5, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
-    {"imie": "Dorota M.", "glos": "mezzosopran", "foto": "media/c-dorotam.png", "rot": 1.6, "dy": -3, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Dorota", "glos": "mezzosopran", "foto": "c-dorota.png", "rot": -0.6, "dy": 5, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Dorota M.", "glos": "mezzosopran", "foto": "c-dorotam.png", "rot": 1.6, "dy": -3, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
     {"imie": "Ela", "glos": "mezzosopran", "foto": null, "rot": -2.2, "dy": 1, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
-    {"imie": "Inka", "glos": "mezzosopran", "foto": "media/c-inka.png", "rot": 0.6, "dy": 3, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
-    {"imie": "Magda T.", "glos": "mezzosopran", "foto": "media/c-magdat.png", "rot": -1.0, "dy": -2, "kolor": 2, "grzebien": 1, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Inka", "glos": "mezzosopran", "foto": "c-inka.png", "rot": 0.6, "dy": 3, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Magda T.", "glos": "mezzosopran", "foto": "c-magdat.png", "rot": -1.0, "dy": -2, "kolor": 2, "grzebien": 1, "odbicie": 0, "skrzydlo": 0},
     {"imie": "Agata", "glos": "alt", "foto": null, "rot": 2.0, "dy": 2, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
     {"imie": "Ania S.", "glos": "alt", "foto": null, "rot": -1.6, "dy": -4, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
-    {"imie": "Basia", "glos": "alt", "foto": "media/c-basia.png", "rot": 1.0, "dy": 1, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 1},
+    {"imie": "Basia", "glos": "alt", "foto": "c-basia.png", "rot": 1.0, "dy": 1, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 1},
     {"imie": "Bożenka", "glos": "alt", "foto": null, "rot": -2.5, "dy": -1, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
     {"imie": "Dorota", "glos": "alt", "foto": null, "rot": 1.4, "dy": 4, "kolor": 3, "grzebien": 1, "odbicie": 1, "skrzydlo": 0},
-    {"imie": "Kamila", "glos": "alt", "foto": "media/c-kamila.png", "rot": -1.0, "dy": -3, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
-    {"imie": "Karolina", "glos": "alt", "foto": "media/c-karolina.png", "rot": -1.4, "dy": -3, "kolor": 2, "skrzydlo": 0, "odbicie": 1, "grzebien": 0},
+    {"imie": "Kamila", "glos": "alt", "foto": "c-kamila.png", "rot": -1.0, "dy": -3, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Karolina", "glos": "alt", "foto": "c-karolina.png", "rot": -1.4, "dy": -3, "kolor": 2, "skrzydlo": 0, "odbicie": 1, "grzebien": 0},
     {"imie": "Magda G.S.", "glos": "alt", "foto": null, "rot": 0.6, "dy": 0, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
-    {"imie": "Ola N.", "glos": "alt", "foto": "media/c-olan.png", "rot": -2.0, "dy": 2, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0}
+    {"imie": "Ola N.", "glos": "alt", "foto": "c-olan.png", "rot": -2.0, "dy": 2, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0}
   ];
   // NACZELNA KURA (dyrygentka)
-  var DYR={"imie": "Aleksandra Kopp", "rola": "dyrygentka", "foto": "media/c-oladyr.png"};
+  var DYR={"imie": "Aleksandra Kopp", "rola": "dyrygentka", "foto": "c-oladyr.png"};
   </script>
 <script>
 (function(){
@@ -826,7 +826,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
     st.setProperty('--skala', (0.97+((o.kolor*7+i)%4)*0.021).toFixed(3));
     st.setProperty('--kolor', KOLORY[o.glos]);
     st.setProperty('--ksztalt', KS[(i+o.kolor)%KS.length]);
-    var klucz=(o.foto||'').replace('media/c-','').replace('.png','');
+    var klucz=(o.foto||'').replace('c-','').replace('.png','');
     var gm=GLOWY[klucz]||[0.06,0.5];
     st.setProperty('--gtop', gm[0]);
     st.setProperty('--gcx', gm[1]);
@@ -924,7 +924,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
 <section class="dyr-wrap" id="dyrygentka">
   <div class="dyr-grid">
     <div class="dyr-foto">
-      <img loading="lazy" decoding="async" width="525" height="700" src="media/0c5cfe5c05.jpg" alt="Aleksandra Kopp">
+      <img loading="lazy" decoding="async" width="525" height="700" src="0c5cfe5c05.jpg" alt="Aleksandra Kopp">
     </div>
     <div class="dyr-tekst">
       <p class="eyebrow">Za pulpitem</p>
@@ -957,7 +957,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
   <figure class="pos-glowny">
     <div class="pos-ekran" id="pos-ekran">
       <button class="pos-fasada" type="button" id="pos-fasada" aria-label="Odtwórz: Reportaż z Otwartych Ogrodów">
-        <img id="pos-fasada-img" loading="lazy" decoding="async" width="720" height="405" src="media/yt-9oScq5ael9s.jpg" alt="">
+        <img id="pos-fasada-img" loading="lazy" decoding="async" width="720" height="405" src="yt-9oScq5ael9s.jpg" alt="">
         <span class="pos-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
       </button>
     </div>
@@ -970,13 +970,13 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
   <div class="pos-boczna">
     <p class="pos-etykieta">Wszystkie nagrania <span>7</span></p>
     <ol class="pos-lista">
-      <li><button type="button" class="pos-poz aktywny" data-yt="9oScq5ael9s" data-tytul="Reportaż z Otwartych Ogrodów" data-miejsce="Podkowa Leśna · realizacja Ewa Gola" aria-current="true"><span class="pos-poz-min"><img src="media/yt-9oScq5ael9s.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Reportaż z Otwartych Ogrodów</b><span>Podkowa Leśna · realizacja Ewa Gola</span></span></button></li>
-      <li><button type="button" class="pos-poz" data-yt="89w16tSKvzk" data-tytul="Hej Skoda" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-89w16tSKvzk.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Hej Skoda</b><span>Milanówek</span></span></button></li>
-      <li><button type="button" class="pos-poz" data-yt="OLZ3QUiLgJg" data-tytul="Piyrso Godzina" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-OLZ3QUiLgJg.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Piyrso Godzina</b><span>Milanówek</span></span></button></li>
-      <li><button type="button" class="pos-poz" data-yt="Pua_ksc1Tx8" data-tytul="Górole, Górole" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-Pua_ksc1Tx8.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Górole, Górole</b><span>Milanówek</span></span></button></li>
-      <li><button type="button" class="pos-poz" data-yt="cS69qde7KHA" data-tytul="Hej Kiejo" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-cS69qde7KHA.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Hej Kiejo</b><span>Milanówek</span></span></button></li>
-      <li><button type="button" class="pos-poz" data-yt="waHOk4bjIwQ" data-tytul="Idzie Dysc" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-waHOk4bjIwQ.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Idzie Dysc</b><span>Milanówek</span></span></button></li>
-      <li><button type="button" class="pos-poz" data-yt="qO7svHCsEWU" data-tytul="Rycerz" data-miejsce="aranżacja Michał Haber"><span class="pos-poz-min"><img src="media/yt-qO7svHCsEWU.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Rycerz</b><span>aranżacja Michał Haber</span></span></button></li>
+      <li><button type="button" class="pos-poz aktywny" data-yt="9oScq5ael9s" data-tytul="Reportaż z Otwartych Ogrodów" data-miejsce="Podkowa Leśna · realizacja Ewa Gola" aria-current="true"><span class="pos-poz-min"><img src="yt-9oScq5ael9s.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Reportaż z Otwartych Ogrodów</b><span>Podkowa Leśna · realizacja Ewa Gola</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="89w16tSKvzk" data-tytul="Hej Skoda" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="yt-89w16tSKvzk.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Hej Skoda</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="OLZ3QUiLgJg" data-tytul="Piyrso Godzina" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="yt-OLZ3QUiLgJg.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Piyrso Godzina</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="Pua_ksc1Tx8" data-tytul="Górole, Górole" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="yt-Pua_ksc1Tx8.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Górole, Górole</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="cS69qde7KHA" data-tytul="Hej Kiejo" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="yt-cS69qde7KHA.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Hej Kiejo</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="waHOk4bjIwQ" data-tytul="Idzie Dysc" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="yt-waHOk4bjIwQ.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Idzie Dysc</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="qO7svHCsEWU" data-tytul="Rycerz" data-miejsce="aranżacja Michał Haber"><span class="pos-poz-min"><img src="yt-qO7svHCsEWU.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Rycerz</b><span>aranżacja Michał Haber</span></span></button></li>
     </ol>
   </div>
 
@@ -1070,7 +1070,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
 <!-- AKTUALNOŚCI -->
 <section class="aktual-wrap" id="aktualnosci">
   <div class="aktual-inner">
-    <div class="aktual-plakat"><img loading="lazy" decoding="async" width="707" height="1000" src="media/a647eacd65.jpg" alt="Chór KUR on Tour — plakat trasy ogrodowej"></div>
+    <div class="aktual-plakat"><img loading="lazy" decoding="async" width="707" height="1000" src="a647eacd65.jpg" alt="Chór KUR on Tour — plakat trasy ogrodowej"></div>
     <div>
       <p class="eyebrow">Gdzie występujemy</p>
       <h2 class="h2">Kalendarz<br><em>koncertów</em> 2026</h2>
@@ -1088,7 +1088,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
 </section>
 
 <div class="scene-full">
-  <img loading="lazy" decoding="async" width="1000" height="750" src="media/5ede44abce.jpg" alt="CHWDK na scenie">
+  <img loading="lazy" decoding="async" width="1000" height="750" src="5ede44abce.jpg" alt="CHWDK na scenie">
   <div class="scene-overlay">
     <div class="scene-txt">
       <blockquote>„Chcemy śpiewać<br>w nowych miejscach."</blockquote>
@@ -1108,7 +1108,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
       <p>Próby w każdy poniedziałek · OKej Brwinów.</p>
     </div>
   </div>
-  <div class="onas-zdjecie"><img loading="lazy" decoding="async" width="1000" height="750" src="media/95d68cfd43.jpg" alt="Chór CHWDK"></div>
+  <div class="onas-zdjecie"><img loading="lazy" decoding="async" width="1000" height="750" src="95d68cfd43.jpg" alt="Chór CHWDK"></div>
 </div>
 
 <!-- KALENDARIUM -->
@@ -1186,28 +1186,28 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
   <div class="gl-rozdzial">
     <p class="gl-etykieta"><b>Dni Piastowa</b><span>9 maja 2026</span></p>
     <div class="gl-siatka">
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="0" data-duze="media/gal-p01-d.jpg" data-opis="Chór na scenie Dni Piastowa" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Chór na scenie Dni Piastowa"><img src="media/gal-p01.jpg" width="860" height="645" alt="Chór na scenie Dni Piastowa" loading="lazy" decoding="async"><span class="gl-podpis">Chór na scenie Dni Piastowa</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="1" data-duze="media/gal-p02-d.jpg" data-opis="Za kulisami, chwilę przed wyjściem na scenę" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Za kulisami, chwilę przed wyjściem na scenę"><img src="media/gal-p02.jpg" width="645" height="860" alt="Za kulisami, chwilę przed wyjściem na scenę" loading="lazy" decoding="async"><span class="gl-podpis">Za kulisami, chwilę przed wyjściem na scenę</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="2" data-duze="media/gal-p03-d.jpg" data-opis="Występ z zespołem" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Występ z zespołem"><img src="media/gal-p03.jpg" width="860" height="645" alt="Występ z zespołem" loading="lazy" decoding="async"><span class="gl-podpis">Występ z zespołem</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="3" data-duze="media/gal-p04-d.jpg" data-opis="Logo chóru na koszulach" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Logo chóru na koszulach"><img src="media/gal-p04.jpg" width="645" height="860" alt="Logo chóru na koszulach" loading="lazy" decoding="async"><span class="gl-podpis">Logo chóru na koszulach</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="4" data-duze="media/gal-p05-d.jpg" data-opis="Śpiew przy mikrofonach" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Śpiew przy mikrofonach"><img src="media/gal-p05.jpg" width="860" height="645" alt="Śpiew przy mikrofonach" loading="lazy" decoding="async"><span class="gl-podpis">Śpiew przy mikrofonach</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="5" data-duze="media/gal-p06-d.jpg" data-opis="Rozgrzewka w sali prób" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Rozgrzewka w sali prób"><img src="media/gal-p06.jpg" width="645" height="860" alt="Rozgrzewka w sali prób" loading="lazy" decoding="async"><span class="gl-podpis">Rozgrzewka w sali prób</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="6" data-duze="media/gal-p07-d.jpg" data-opis="Wieczorny koncert" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Wieczorny koncert"><img src="media/gal-p07.jpg" width="860" height="645" alt="Wieczorny koncert" loading="lazy" decoding="async"><span class="gl-podpis">Wieczorny koncert</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="7" data-duze="media/gal-p08-d.jpg" data-opis="Na scenie Miejskiego Ośrodka Kultury" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Na scenie Miejskiego Ośrodka Kultury"><img src="media/gal-p08.jpg" width="645" height="860" alt="Na scenie Miejskiego Ośrodka Kultury" loading="lazy" decoding="async"><span class="gl-podpis">Na scenie Miejskiego Ośrodka Kultury</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="8" data-duze="media/gal-p09-d.jpg" data-opis="W drodze na scenę" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: W drodze na scenę"><img src="media/gal-p09.jpg" width="645" height="860" alt="W drodze na scenę" loading="lazy" decoding="async"><span class="gl-podpis">W drodze na scenę</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="0" data-duze="gal-p01-d.jpg" data-opis="Chór na scenie Dni Piastowa" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Chór na scenie Dni Piastowa"><img src="gal-p01.jpg" width="860" height="645" alt="Chór na scenie Dni Piastowa" loading="lazy" decoding="async"><span class="gl-podpis">Chór na scenie Dni Piastowa</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="1" data-duze="gal-p02-d.jpg" data-opis="Za kulisami, chwilę przed wyjściem na scenę" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Za kulisami, chwilę przed wyjściem na scenę"><img src="gal-p02.jpg" width="645" height="860" alt="Za kulisami, chwilę przed wyjściem na scenę" loading="lazy" decoding="async"><span class="gl-podpis">Za kulisami, chwilę przed wyjściem na scenę</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="2" data-duze="gal-p03-d.jpg" data-opis="Występ z zespołem" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Występ z zespołem"><img src="gal-p03.jpg" width="860" height="645" alt="Występ z zespołem" loading="lazy" decoding="async"><span class="gl-podpis">Występ z zespołem</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="3" data-duze="gal-p04-d.jpg" data-opis="Logo chóru na koszulach" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Logo chóru na koszulach"><img src="gal-p04.jpg" width="645" height="860" alt="Logo chóru na koszulach" loading="lazy" decoding="async"><span class="gl-podpis">Logo chóru na koszulach</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="4" data-duze="gal-p05-d.jpg" data-opis="Śpiew przy mikrofonach" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Śpiew przy mikrofonach"><img src="gal-p05.jpg" width="860" height="645" alt="Śpiew przy mikrofonach" loading="lazy" decoding="async"><span class="gl-podpis">Śpiew przy mikrofonach</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="5" data-duze="gal-p06-d.jpg" data-opis="Rozgrzewka w sali prób" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Rozgrzewka w sali prób"><img src="gal-p06.jpg" width="645" height="860" alt="Rozgrzewka w sali prób" loading="lazy" decoding="async"><span class="gl-podpis">Rozgrzewka w sali prób</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="6" data-duze="gal-p07-d.jpg" data-opis="Wieczorny koncert" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Wieczorny koncert"><img src="gal-p07.jpg" width="860" height="645" alt="Wieczorny koncert" loading="lazy" decoding="async"><span class="gl-podpis">Wieczorny koncert</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="7" data-duze="gal-p08-d.jpg" data-opis="Na scenie Miejskiego Ośrodka Kultury" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Na scenie Miejskiego Ośrodka Kultury"><img src="gal-p08.jpg" width="645" height="860" alt="Na scenie Miejskiego Ośrodka Kultury" loading="lazy" decoding="async"><span class="gl-podpis">Na scenie Miejskiego Ośrodka Kultury</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="8" data-duze="gal-p09-d.jpg" data-opis="W drodze na scenę" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: W drodze na scenę"><img src="gal-p09.jpg" width="645" height="860" alt="W drodze na scenę" loading="lazy" decoding="async"><span class="gl-podpis">W drodze na scenę</span></button></figure>
     </div>
   </div>
 
   <div class="gl-rozdzial">
     <p class="gl-etykieta"><b>Otwarte Ogrody</b><span>Milanówek · Podkowa Leśna · Brwinów · czerwiec 2026</span></p>
     <div class="gl-siatka">
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="9" data-duze="media/gal-o01-d.jpg" data-opis="Śpiew w ogrodzie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Śpiew w ogrodzie"><img src="media/gal-o01.jpg" width="860" height="645" alt="Śpiew w ogrodzie" loading="lazy" decoding="async"><span class="gl-podpis">Śpiew w ogrodzie</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="10" data-duze="media/gal-o02-d.jpg" data-opis="Selfie w kręgu" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Selfie w kręgu"><img src="media/gal-o02.jpg" width="645" height="860" alt="Selfie w kręgu" loading="lazy" decoding="async"><span class="gl-podpis">Selfie w kręgu</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="11" data-duze="media/gal-o03-d.jpg" data-opis="Koncert pod batutą Aleksandry Kopp" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Koncert pod batutą Aleksandry Kopp"><img src="media/gal-o03.jpg" width="860" height="645" alt="Koncert pod batutą Aleksandry Kopp" loading="lazy" decoding="async"><span class="gl-podpis">Koncert pod batutą Aleksandry Kopp</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="12" data-duze="media/gal-o04-d.jpg" data-opis="Przerwa w oranżerii" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Przerwa w oranżerii"><img src="media/gal-o04.jpg" width="645" height="860" alt="Przerwa w oranżerii" loading="lazy" decoding="async"><span class="gl-podpis">Przerwa w oranżerii</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="13" data-duze="media/gal-o05-d.jpg" data-opis="Koncert dla publiczności w ogrodzie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Koncert dla publiczności w ogrodzie"><img src="media/gal-o05.jpg" width="860" height="573" alt="Koncert dla publiczności w ogrodzie" loading="lazy" decoding="async"><span class="gl-podpis">Koncert dla publiczności w ogrodzie</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="14" data-duze="media/gal-o06-d.jpg" data-opis="Chórzystki w oranżerii" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Chórzystki w oranżerii"><img src="media/gal-o06.jpg" width="645" height="860" alt="Chórzystki w oranżerii" loading="lazy" decoding="async"><span class="gl-podpis">Chórzystki w oranżerii</span></button></figure>
-      <figure class="gl-el"><button type="button" class="gl-btn" data-i="15" data-duze="media/gal-o07-d.jpg" data-opis="Chór w pełnym składzie na trawie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Chór w pełnym składzie na trawie"><img src="media/gal-o07.jpg" width="860" height="573" alt="Chór w pełnym składzie na trawie" loading="lazy" decoding="async"><span class="gl-podpis">Chór w pełnym składzie na trawie</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="9" data-duze="gal-o01-d.jpg" data-opis="Śpiew w ogrodzie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Śpiew w ogrodzie"><img src="gal-o01.jpg" width="860" height="645" alt="Śpiew w ogrodzie" loading="lazy" decoding="async"><span class="gl-podpis">Śpiew w ogrodzie</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="10" data-duze="gal-o02-d.jpg" data-opis="Selfie w kręgu" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Selfie w kręgu"><img src="gal-o02.jpg" width="645" height="860" alt="Selfie w kręgu" loading="lazy" decoding="async"><span class="gl-podpis">Selfie w kręgu</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="11" data-duze="gal-o03-d.jpg" data-opis="Koncert pod batutą Aleksandry Kopp" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Koncert pod batutą Aleksandry Kopp"><img src="gal-o03.jpg" width="860" height="645" alt="Koncert pod batutą Aleksandry Kopp" loading="lazy" decoding="async"><span class="gl-podpis">Koncert pod batutą Aleksandry Kopp</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="12" data-duze="gal-o04-d.jpg" data-opis="Przerwa w oranżerii" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Przerwa w oranżerii"><img src="gal-o04.jpg" width="645" height="860" alt="Przerwa w oranżerii" loading="lazy" decoding="async"><span class="gl-podpis">Przerwa w oranżerii</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="13" data-duze="gal-o05-d.jpg" data-opis="Koncert dla publiczności w ogrodzie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Koncert dla publiczności w ogrodzie"><img src="gal-o05.jpg" width="860" height="573" alt="Koncert dla publiczności w ogrodzie" loading="lazy" decoding="async"><span class="gl-podpis">Koncert dla publiczności w ogrodzie</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="14" data-duze="gal-o06-d.jpg" data-opis="Chórzystki w oranżerii" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Chórzystki w oranżerii"><img src="gal-o06.jpg" width="645" height="860" alt="Chórzystki w oranżerii" loading="lazy" decoding="async"><span class="gl-podpis">Chórzystki w oranżerii</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="15" data-duze="gal-o07-d.jpg" data-opis="Chór w pełnym składzie na trawie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Chór w pełnym składzie na trawie"><img src="gal-o07.jpg" width="860" height="573" alt="Chór w pełnym składzie na trawie" loading="lazy" decoding="async"><span class="gl-podpis">Chór w pełnym składzie na trawie</span></button></figure>
     </div>
   </div>
 </section>

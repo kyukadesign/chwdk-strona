@@ -1,6 +1,6 @@
 # Jak edytować stronę CHWDK
 
-Strona to **jeden plik `index.html`** + folder **`media/`** ze zdjęciami. Nie ma tu żadnego frameworka ani budowania — to, co zapiszesz, trafia na stronę.
+Strona to **jeden plik `index.html`** + zdjęcia leżące obok niego, w głównym folderze repozytorium. Nie ma tu żadnego frameworka ani budowania — to, co zapiszesz, trafia na stronę.
 
 ## Jak to działa
 
@@ -55,8 +55,8 @@ W skrypcie szukaj `var CHOR=[` — jedna osoba to jedna linia:
 - dyrygentka: `var DYR=` tuż pod listą.
 
 ### Zdjęcie w galerii
-Potrzebne są **dwa pliki** w `media/`: miniatura `gal-NAZWA.jpg` (dłuższy bok 860 px) i duże `gal-NAZWA-d.jpg` (dłuższy bok 1600 px). Potem skopiuj istniejący `<figure class="gl-el">…</figure>` i zmień:
-- `data-duze="media/gal-NAZWA-d.jpg"`, `src="media/gal-NAZWA.jpg"`
+Potrzebne są **dwa pliki** (wgraj je do głównego folderu): miniatura `gal-NAZWA.jpg` (dłuższy bok 860 px) i duże `gal-NAZWA-d.jpg` (dłuższy bok 1600 px). Potem skopiuj istniejący `<figure class="gl-el">…</figure>` i zmień:
+- `data-duze="gal-NAZWA-d.jpg"`, `src="gal-NAZWA.jpg"`
 - `width` i `height` — **prawdziwe wymiary miniatury** (np. 860 i 645); od nich zależy układ rzędów
 - `data-opis`, `alt`, `aria-label`, tekst w `gl-podpis` — podpis zdjęcia; `data-miejsce` — miejsce i data
 - `data-i` — kolejny numer (dla porządku)
@@ -64,7 +64,7 @@ Potrzebne są **dwa pliki** w `media/`: miniatura `gal-NAZWA.jpg` (dłuższy bok
 Galeria sama układa się w równe rzędy.
 
 ### Film z YouTube
-W `<!-- POSŁUCHAJ NAS -->` skopiuj jedną pozycję listy `<li><button class="pos-poz" …>` i zmień `data-yt` (ID filmu — to, co jest po `v=` w linku), `data-tytul`, `data-miejsce` oraz teksty w `<b>` i `<span>`. Miniatura: `media/yt-ID.jpg` (720×405 px). Liczbę nagrań w nagłówku listy (`Wszystkie nagrania <span>7</span>`) popraw ręcznie.
+W `<!-- POSŁUCHAJ NAS -->` skopiuj jedną pozycję listy `<li><button class="pos-poz" …>` i zmień `data-yt` (ID filmu — to, co jest po `v=` w linku), `data-tytul`, `data-miejsce` oraz teksty w `<b>` i `<span>`. Miniatura: `yt-ID.jpg` (720×405 px). Liczbę nagrań w nagłówku listy (`Wszystkie nagrania <span>7</span>`) popraw ręcznie.
 
 ## Czego nie ruszać
 
