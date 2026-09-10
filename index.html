@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHWDK — Chór Wydartych Domom Kur</title>
+<meta name="description" content="Kobiecy chór z Brwinowa na Mazowszu, śpiewający od 2013 roku. Od muzyki ludowej i piosenki warszawskiej po musical, kolędy i muzykę współczesną.">
+<meta name="theme-color" content="#EDE4D3">
+<meta name="color-scheme" content="light">
+<link rel="icon" type="image/png" sizes="64x64" href="media/cd5e02255e.png">
+<link rel="apple-touch-icon" sizes="180x180" href="media/1922339f3a.png">
+
+<!-- udostepnianie: Facebook, Messenger, WhatsApp, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="CHWDK">
+<meta property="og:title" content="Chór Wydartych Domom Kur">
+<meta property="og:description" content="Kobiecy chór z Brwinowa na Mazowszu, śpiewający od 2013 roku. Od muzyki ludowej i piosenki warszawskiej po musical, kolędy i muzykę współczesną.">
+<meta property="og:url" content="https://chwdk.pl/">
+<meta property="og:image" content="https://chwdk.pl/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chór Wydartych Domom Kur — cały zespół w białych koszulach i czerwonych koralach">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chór Wydartych Domom Kur">
+<meta name="twitter:description" content="Kobiecy chór z Brwinowa na Mazowszu, śpiewający od 2013 roku. Od muzyki ludowej i piosenki warszawskiej po musical, kolędy i muzykę współczesną.">
+<meta name="twitter:image" content="https://chwdk.pl/og.jpg">
+
+<link rel="preload" as="image" href="media/cd5e02255e.png" fetchpriority="high">
+<link rel="preload" as="image" href="media/hero-zespol.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap">
+<style>
+:root{color-scheme:light}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;height:auto}
+:root{--roz:#E8175D;--por:#F5A623;--blad:#A8C8D0;--krem:#EDE4D3;--dark:#0F0F0F;--mid:#777;--fiolet:#7B3F98;--kura-logo:url(media/a72d95bbba.png);}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--krem);color:var(--dark);overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 48px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(237,228,211,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(232,23,93,.15);}
+.logo{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;letter-spacing:.08em;color:var(--dark);text-decoration:none;}
+.logo em{font-style:normal;color:var(--roz)}
+.logo{display:inline-flex;align-items:center}
+.logo-kura{width:26px;height:26px;border-radius:4px;display:block;margin-right:9px;flex-shrink:0}
+.nav-links{list-style:none;display:flex;gap:28px}
+.nav-links a{text-decoration:none;font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);transition:color .2s;}
+.nav-links a:hover{color:var(--roz)}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-burger span{display:block;width:24px;height:2px;background:var(--dark);transition:all .3s}
+.nav-mobile{display:none;position:fixed;inset:0;top:68px;background:var(--krem);z-index:190;padding:40px 32px;flex-direction:column;gap:0}
+.nav-mobile.open{display:flex}
+.nav-mobile a{display:block;font-family:'Syne',sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dark);text-decoration:none;padding:18px 0;border-bottom:1px solid rgba(0,0,0,.08);transition:color .2s}
+.nav-mobile a:hover{color:var(--roz)}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:48% 52%;padding-top:68px}
+.hero-panel{background:var(--krem);display:flex;flex-direction:column;justify-content:center;padding:60px 48px 60px 72px;position:relative;overflow:hidden;}
+.hero-kura-bg{position:absolute;right:-60px;bottom:-40px;width:420px;opacity:.08;pointer-events:none;}
+.hero-kura-accent{width:76px;margin-bottom:22px;display:block;}
+.hero-tag{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--roz);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--roz)}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(46px,7.4vw,124px);font-weight:300;line-height:.93;color:var(--dark);letter-spacing:-.025em;margin-bottom:0;}
+.hero-title em{font-style:italic;color:var(--roz);display:block;}
+.hero-divider{display:block;width:40px;height:1px;background:var(--roz);margin:20px 0;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(15px,1.6vw,19px);font-weight:300;font-style:italic;color:var(--mid);margin-bottom:36px;letter-spacing:.04em;}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
+.btn-fill{display:inline-block;background:var(--roz);color:#fff;text-decoration:none;padding:13px 32px;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--roz);transition:background .2s,color .2s;}
+.btn-fill:hover{background:transparent;color:var(--roz)}
+.btn-out{display:inline-block;border:1px solid rgba(0,0,0,.2);color:var(--dark);text-decoration:none;padding:13px 32px;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;transition:border-color .2s;}
+.btn-out:hover{border-color:var(--dark)}
+.hero-photo{position:relative;overflow:hidden;min-height:400px;background:var(--krem);display:flex;align-items:center;justify-content:center;padding:0 0 0 4px}
+.hero-photo img{width:100%;height:auto;max-height:100%;object-fit:contain;display:block}
+.hero-photo::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--krem) 0%,transparent 5%);z-index:1;pointer-events:none}
+
+
+
+
+
+/* ===== HERO DESKTOP — plakat: zdjecie na caly ekran, tytul nad nogami, nie nad twarzami =====
+   Twarze na zdjeciu: 0.13–0.66 wysokosci. Gorna krawedz kadru przypieta do 0.125 wysokosci
+   zdjecia (object-position w vw), wiec dziala przy kazdej proporcji monitora. */
+@media(min-width:769px){
+  .hero{position:relative;display:block;height:100vh;min-height:max(620px, calc(50.8vw + 68px));
+    padding-top:68px;background:#15110E;overflow:hidden}
+  .hero-photo{position:absolute;left:0;right:0;top:68px;bottom:0;padding:0;min-height:0;
+    display:block;background:#15110E}
+  .hero-photo img{position:absolute;inset:0;z-index:0;width:100%;height:100%;max-height:none;object-fit:cover;object-position:50% -9.4vw}
+  .hero-photo::before{z-index:1;background:linear-gradient(to bottom,
+    rgba(21,17,14,0) 0%, rgba(21,17,14,0) 64%, rgba(21,17,14,.46) 79%, rgba(21,17,14,.86) 100%)}
+  .hero-panel{position:absolute;left:0;right:0;bottom:0;z-index:2;background:none;overflow:visible;
+    display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;column-gap:48px;
+    padding:0 clamp(32px,4.4vw,76px) clamp(24px,2.3vw,40px)}
+  .hero-kura-bg,.hero-kura-accent{display:none}
+  .hero-tag{grid-column:1;grid-row:1;margin-bottom:9px;color:#F6B8CC}
+  .hero-tag::before{background:#F6B8CC}
+  .hero-title{grid-column:1;grid-row:2;color:#FBF6EE;font-size:clamp(52px,5.9vw,108px);
+    line-height:.95;letter-spacing:-.022em;text-shadow:0 2px 30px rgba(0,0,0,.28)}
+  .hero-title em{display:inline;color:#FF7EA5}
+  .hero-cta{grid-column:2;grid-row:1 / span 2;margin-top:0;display:flex;flex-direction:column;
+    align-items:stretch;gap:10px;padding-bottom:6px}
+  .hero-cta a{text-align:center;min-width:196px}
+  .hero-cta .btn-out{border-color:rgba(255,255,255,.52);color:#fff}
+  .hero-cta .btn-out:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+}
+
+/* MANIFEST — krotki pomost miedzy hero a kurnikiem */
+.manifest{background:var(--krem);padding:104px 64px 112px;
+  display:grid;grid-template-columns:1.08fr .92fr;column-gap:76px;
+  grid-template-rows:auto auto auto;align-items:start;position:relative;overflow:hidden}
+.manifest .eyebrow{grid-column:1;grid-row:1}
+.manifest-h{grid-column:1;grid-row:2;max-width:none;margin-bottom:0;
+  font-size:clamp(34px,5.6vw,88px);line-height:.98}
+.manifest-txt{grid-column:2;grid-row:2;align-self:end;
+  font-size:clamp(16px,1.3vw,19px);line-height:1.74;color:var(--dark);max-width:40ch;padding-bottom:8px}
+.manifest-meta{grid-column:2;grid-row:3;margin-top:20px;
+  font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--roz)}
+@media(max-width:900px){
+  .manifest{grid-template-columns:1fr;column-gap:0;padding:64px 40px 68px}
+  .manifest .eyebrow,.manifest-h,.manifest-txt,.manifest-meta{grid-column:1}
+  .manifest-h{grid-row:2;margin-bottom:26px}
+  .manifest-txt{grid-row:3;max-width:52ch;padding-bottom:0}
+  .manifest-meta{grid-row:4;margin-top:16px}
+}
+@media(max-width:768px){
+  .manifest{padding:48px 24px 52px}
+  .manifest-h{font-size:clamp(30px,8.8vw,46px);margin-bottom:20px}
+  .manifest-txt{font-size:15.5px;line-height:1.7}
+}
+
+.eyebrow{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--roz);margin-bottom:18px;}
+.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4.3vw,66px);font-weight:300;line-height:1.04;letter-spacing:-.018em;margin-bottom:30px;max-width:15ch;}
+.h2 em{font-style:italic;color:var(--roz)}
+
+/* O NAS */
+.onas-grid{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.onas-tekst{padding:88px 64px;background:var(--krem);display:flex;flex-direction:column;justify-content:center;}
+.onas-tekst::before{content:'';display:block;width:4px;height:44px;background:var(--roz);margin-bottom:24px;}
+.onas-zdjecie{position:relative;min-height:500px;overflow:hidden}
+.onas-zdjecie img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.body-txt{font-size:15px;color:var(--mid);line-height:1.85;margin-bottom:32px}
+.body-txt p{margin-bottom:14px}
+.os-lista{border-top:1px solid rgba(0,0,0,.1)}
+.os-item{display:flex;gap:16px;padding:13px 0;border-bottom:1px solid rgba(0,0,0,.07)}
+.os-rok{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;color:var(--roz);min-width:36px;padding-top:2px;}
+.os-txt{font-size:13px;color:var(--dark);line-height:1.6}
+
+/* DYRYGENTKA — PRZEBUDOWANA NA MOBILE */
+.dyr-wrap{background:#fff}
+.dyr-grid{display:grid;grid-template-columns:420px 1fr;min-height:560px;align-items:stretch}
+.dyr-foto{position:relative;overflow:hidden;background:#f0ebe1;min-height:400px}
+.dyr-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.dyr-tekst{padding:72px 64px;display:flex;flex-direction:column;justify-content:center;}
+.dyr-tagi{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.dyr-tag{border:1px solid rgba(0,0,0,.1);padding:5px 14px;font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#666}
+
+/* KALENDARIUM */
+.kal-wrap{background:var(--dark);padding:88px 64px}
+.kal-linia{position:relative;max-width:760px}
+.kal-linia::before{content:'';position:absolute;left:72px;top:8px;bottom:0;width:1px;background:#1f1f1f}
+.kal-item{display:flex;gap:0;align-items:flex-start;padding-bottom:44px}
+.kal-rok{min-width:72px;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;color:var(--roz);padding-top:5px;letter-spacing:.06em}
+.kal-dot-wrap{position:relative;margin-right:28px;flex-shrink:0}
+.kal-dot{width:10px;height:10px;border-radius:50%;background:var(--roz);margin-top:5px;position:relative;z-index:1}
+.kal-dot.szary{background:#1f1f1f;border:1px solid #2a2a2a}
+.kal-dot.teraz{width:14px;height:14px;margin-top:3px;box-shadow:0 0 0 4px rgba(232,23,93,.2)}
+.kal-txt h3{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:#fff;margin-bottom:6px}
+.kal-txt p{font-size:13px;color:#555;line-height:1.7}
+
+/* SCENA FULL */
+.scene-full{height:60vh;min-height:380px;position:relative;overflow:hidden;}
+.scene-full img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.scene-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,10,10,.72) 0%,rgba(10,10,10,0) 60%);display:flex;align-items:center;padding:0 72px;}
+.scene-txt::before{content:'';display:block;width:28px;height:1px;background:var(--roz);margin-bottom:18px;}
+.scene-txt blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3.2vw,44px);font-weight:300;font-style:italic;color:#fff;line-height:1.25;margin-bottom:12px;}
+.scene-txt cite{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.35);font-style:normal;}
+
+/* REPORTAŻ */
+.rep-player-wrap{background:var(--dark)}
+.rep-player{position:relative;width:100%;cursor:pointer;background:#000;overflow:hidden;}
+.rep-player::before{content:'';display:block;padding-bottom:46%;}
+.rep-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.rep-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,rgba(0,0,0,.2) 60%,rgba(0,0,0,.05) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:background .3s}
+.rep-player:hover .rep-overlay{background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.35) 100%)}
+.rep-play{width:72px;height:72px;border-radius:50%;background:var(--roz);display:flex;align-items:center;justify-content:center;margin-bottom:16px;transition:transform .2s,background .2s;box-shadow:0 0 0 10px rgba(232,23,93,.15)}
+.rep-player:hover .rep-play{transform:scale(1.08);background:#c0103d}
+.rep-play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.rep-title{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2.2vw,28px);font-weight:300;font-style:italic;color:#fff;text-align:center;}
+.rep-meta{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:6px}
+.rep-video-wrap{display:none;position:relative;}
+.rep-video-wrap::before{content:'';display:block;padding-bottom:46%;}
+.rep-video-wrap video{position:absolute;inset:0;width:100%;height:100%;background:#000}
+.rep-info{background:#080808;padding:16px 64px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #1a1a1a;gap:16px;flex-wrap:wrap}
+.rep-info-txt{font-size:13px;color:#444}
+.rep-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(232,23,93,.08);border:1px solid rgba(232,23,93,.15);padding:5px 12px;font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--roz);white-space:nowrap}
+
+/* WIĘCEJ FILMÓW */
+.filmy-wrap{background:#fff;padding:70px 64px}
+.filmy-intro{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:48px}
+.filmy-lead{font-size:15px;color:var(--mid);line-height:1.85}
+.filmy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:4px}
+.film-item{position:relative;overflow:hidden;cursor:pointer;background:#111}
+.film-item::before{content:'';display:block;padding-bottom:56.25%}
+.film-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s,opacity .3s}
+.film-item:hover .film-thumb{transform:scale(1.04);opacity:.6}
+.film-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.play-btn{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);transition:background .2s,transform .2s;margin-bottom:10px}
+.film-item:hover .play-btn{background:var(--roz);border-color:var(--roz);transform:scale(1.08)}
+.play-btn svg{width:18px;height:18px;fill:#fff;margin-left:3px}
+.film-label{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.film-dur{font-family:'Cormorant Garamond',serif;font-size:12px;color:rgba(255,255,255,.3);margin-top:3px}
+
+/* MODAL */
+.modal{display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.93);align-items:center;justify-content:center}
+.modal.open{display:flex}
+.modal-inner{position:relative;width:92vw;max-width:900px}
+.modal video{width:100%;display:block}
+.modal-close{position:absolute;top:-44px;right:0;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;font-family:'Cormorant Garamond',serif;opacity:.5;transition:opacity .2s;line-height:1}
+.modal-close:hover{opacity:1}
+
+/* GALERIA — rozszerzona */
+.gal-wrap{background:var(--dark);padding:112px 0 0}
+.gal-header{padding:0 64px;margin-bottom:40px}
+.gal-header .eyebrow{color:var(--por)}
+.gal-header .h2{color:#fff}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:260px 260px 260px;gap:3px}
+.g{overflow:hidden;position:relative;cursor:pointer}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.g:hover img{transform:scale(1.05)}
+.g:nth-child(1){grid-column:span 2;grid-row:span 2}
+.g:nth-child(6){grid-column:span 2}
+.g-badge{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(10,10,10,.65) 0%,transparent 100%);padding:16px 14px 10px;font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);opacity:0;transition:opacity .3s}
+.g:hover .g-badge{opacity:1}
+
+/* REPERTUAR */
+.rep-wrap{background:var(--krem);padding:62px 64px}
+.rep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid rgba(0,0,0,.1);border-left:1px solid rgba(0,0,0,.1)}
+.rep-item{padding:34px 30px 38px;border-right:1px solid rgba(0,0,0,.1);border-bottom:1px solid rgba(0,0,0,.1);transition:background .2s;position:relative;overflow:hidden}
+.rep-item:hover{background:#e5dcc9}
+.rep-item::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--roz);transition:width .35s}
+.rep-item:hover::after{width:100%}
+.rep-nr{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;line-height:1;
+  color:var(--roz);opacity:.28;margin-bottom:14px;letter-spacing:-.02em}
+.rep-item:hover .rep-nr{opacity:.6;transition:opacity .3s}
+.rep-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;margin-bottom:8px}
+.rep-desc{font-size:13px;color:var(--mid);line-height:1.7}
+
+/* AKTUALNOŚCI */
+.aktual-wrap{background:var(--blad);padding:100px 64px}
+.aktual-inner{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.aktual-plakat img{width:260px;box-shadow:8px 8px 0 var(--roz)}
+.aktual-date{display:inline-block;background:var(--roz);color:#fff;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;margin-bottom:16px}
+.aktual-miejsce{font-size:14px;color:var(--dark);line-height:1.9}
+.aktual-sep{border:none;border-top:1px solid rgba(0,0,0,.1);margin:10px 0}
+
+/* ENGLISH */
+.en-wrap{background:var(--krem);padding:64px 64px}
+.en-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.en-cta{background:var(--dark);padding:32px}
+.en-cta p.lead{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;font-style:italic;color:#fff;margin-bottom:8px}
+.en-cta p.sub{font-size:13px;color:#555;line-height:1.7;margin-bottom:20px}
+
+/* FORMULARZ */
+.form-wrap{background:var(--dark);padding:116px 64px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.form-info .h2{color:#fff} .form-info .h2 em{color:var(--roz)}
+.form-opis{font-size:15px;color:#555;line-height:1.85;margin-bottom:32px}
+.form-lista{border-top:1px solid #1a1a1a}
+.form-punkt{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid #1a1a1a}
+.form-punkt::before{content:'';flex:0 0 20px;height:1px;background:var(--roz);margin-top:11px;opacity:.5}
+.form-punkt-i{color:var(--roz);font-size:16px;flex-shrink:0;margin-top:1px}
+.form-punkt-t{font-size:14px;color:#888;line-height:1.6}
+.form-punkt-t strong{color:#ccc;display:block;margin-bottom:2px;font-weight:500}
+.formularz{background:rgba(255,255,255,.04);border:1px solid #1a1a1a;padding:40px}
+.formularz-tytul{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:#fff;margin-bottom:6px}
+.formularz-sub{font-size:13px;color:#444;margin-bottom:28px}
+.pole{margin-bottom:16px}
+.pole label{display:block;font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#444;margin-bottom:6px}
+.pole input,.pole select,.pole textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid #1f1f1f;color:#ddd;padding:11px 14px;font-size:14px;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s;appearance:none}
+.pole input:focus,.pole select:focus,.pole textarea:focus{border-color:var(--roz);background:rgba(232,23,93,.04)}
+.pole input::placeholder,.pole textarea::placeholder{color:#333}
+.pole select{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23555' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.pole select option{background:#1a1a1a;color:#ddd}
+.pole textarea{height:90px;resize:vertical}
+.pole-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cel-wybor{display:flex;gap:8px;margin-bottom:22px}
+.cel-opcja{flex:1;position:relative;cursor:pointer}
+.cel-opcja input{position:absolute;opacity:0;width:0;height:0}
+.cel-opcja span{display:block;text-align:center;padding:13px 10px;border:1px solid rgba(15,15,15,.18);border-radius:2px;
+  font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mid);transition:all .2s}
+.cel-opcja input:checked+span{background:var(--roz);border-color:var(--roz);color:#fff}
+.cel-opcja input:focus-visible+span{outline:2px solid var(--dark);outline-offset:2px}
+.cel-info{font-size:12.5px;line-height:1.65;color:var(--mid);margin:-8px 0 22px;padding-left:12px;border-left:2px solid var(--por)}
+form[data-cel="zapraszam"] .tylko-dolaczenie{display:none}
+form[data-cel="dolaczam"] .tylko-zaproszenie{display:none}
+.btn-wyslij{width:100%;margin-top:6px;background:var(--roz);color:#fff;border:none;padding:14px;font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.btn-wyslij:hover{background:#c0103d}
+.form-success{display:none;text-align:center;padding:40px 20px}
+.form-success-i{font-size:44px;margin-bottom:14px}
+.form-success-t{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:#fff;margin-bottom:6px}
+.form-success-s{font-size:13px;color:#555}
+
+/* FOOTER */
+footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot-logo{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;color:#fff;letter-spacing:.08em}
+.foot-logo em{font-style:normal;color:var(--roz)}
+.foot-copy{font-size:12px;color:#2a2a2a}
+.foot-links{display:flex;gap:20px}
+.foot-links a{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#2a2a2a;text-decoration:none;transition:color .2s;padding:14px 6px;display:inline-block}
+.foot-links a:hover{color:var(--roz)}
+
+/* ══════════════════════════
+   MOBILE — pełne przepisanie
+══════════════════════════ */
+@media(max-width:768px){
+  /* NAV mobile */
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .nav-burger{display:flex}
+
+  /* HERO mobile — zdjecie pelnoekranowe, typografia na nim */
+  .hero{grid-template-columns:1fr;grid-template-rows:auto auto;min-height:auto;padding-top:68px;position:relative}
+  .hero-photo{position:relative;grid-area:auto;order:1;min-height:0;height:auto;padding:0;align-items:flex-start}
+  .hero-photo img{width:100%;height:auto;max-height:none}
+  .hero-photo::before{background:none}
+  .hero-panel{grid-area:auto;order:2;position:relative;z-index:2;background:var(--krem);
+    justify-content:flex-start;padding:30px 24px calc(34px + env(safe-area-inset-bottom))}
+  .hero-kura-bg{display:none}
+  .hero-kura-accent{width:58px;margin-bottom:14px}
+  .hero-tag{margin-bottom:10px;font-size:9.5px;letter-spacing:.2em}
+  .hero-title{font-size:clamp(42px,13.4vw,64px);line-height:.92}
+  .hero-cta{margin-top:26px;gap:10px}
+  .hero-cta a{flex:1 1 auto;text-align:center;padding:15px 18px}
+
+  
+
+  /* O NAS mobile */
+  .onas-grid{grid-template-columns:1fr}
+  .onas-tekst{padding:56px 24px}
+  .onas-zdjecie{min-height:280px;order:-1}
+
+  /* DYRYGENTKA mobile — kluczowa poprawka */
+  .dyr-grid{grid-template-columns:1fr;min-height:auto}
+  .dyr-foto{min-height:264px;position:relative}
+  .dyr-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%}
+  .dyr-tekst{padding:34px 24px 40px}
+  .dyr-tekst .body-txt p{font-size:14px;line-height:1.68;margin-bottom:12px}
+  .dyr-tagi{gap:6px}
+  .dyr-tag{font-size:8.5px;padding:5px 9px}
+
+  /* KALENDARIUM mobile */
+  .kal-wrap{padding:56px 24px}
+  .kal-linia::before{left:60px}
+  .kal-rok{min-width:60px;font-size:10px}
+
+  /* SCENE mobile */
+  .scene-full{height:50vw;min-height:220px}
+  .scene-overlay{padding:0 24px}
+  .scene-txt blockquote{font-size:clamp(18px,5vw,28px)}
+
+  /* REPORTAŻ mobile */
+  .rep-player::before{padding-bottom:56.25%}
+  .rep-video-wrap::before{padding-bottom:56.25%}
+  .rep-info{padding:12px 20px;flex-direction:column;align-items:flex-start;gap:8px}
+  .rep-play{width:56px;height:56px}
+
+  /* FILMY mobile */
+  .filmy-wrap{padding:56px 24px}
+  .filmy-intro{grid-template-columns:1fr;gap:16px}
+  .filmy-grid{grid-template-columns:1fr}
+
+  /* GALERIA mobile */
+  .gal-header{padding:0 24px}
+  .galeria{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .g{height:44vw}
+  .g:nth-child(1){grid-column:span 2;grid-row:span 1;height:56vw}
+  .g:nth-child(6){grid-column:span 2;height:44vw}
+
+  /* REPERTUAR mobile */
+  .rep-wrap{padding:56px 24px}
+  .rep-grid{grid-template-columns:1fr}
+  .rep-item{border-right:none!important}
+
+  /* AKTUALNOŚCI mobile */
+  .aktual-wrap{padding:52px 24px}
+  .aktual-inner{grid-template-columns:1fr;gap:32px}
+  .aktual-plakat img{width:100%;max-width:280px}
+
+  /* ENGLISH mobile */
+  .en-wrap{padding:56px 24px}
+  .en-grid{grid-template-columns:1fr;gap:36px}
+
+  /* FORMULARZ mobile */
+  .form-wrap{padding:56px 24px}
+  .form-grid{grid-template-columns:1fr}
+  .formularz{padding:28px 20px}
+  .pole-row{grid-template-columns:1fr}
+
+  /* FOOTER mobile */
+  footer{flex-direction:column;gap:12px;padding:24px;text-align:center}
+  .foot-links{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo"><img fetchpriority="high" decoding="async" width="64" height="64" src="media/cd5e02255e.png" alt="" class="logo-kura">CHWDK<em>.</em></a>
+  <ul class="nav-links"><li><a href="#grzeda">Zespół</a></li><li><a href="#reportaz">Posłuchaj</a></li><li><a href="#aktualnosci">Koncerty</a></li><li><a href="#o-nas">Historia</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#english">EN</a></li><li><a href="#zaproszenia">Zaproś nas</a></li></ul>
+  <div class="nav-burger" onclick="toggleMenu()" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="nav-mobile">
+  <a href="#grzeda" onclick="toggleMenu()">Zespół</a>
+  <a href="#dyrygentka" onclick="toggleMenu()">Dyrygentka</a>
+  <a href="#reportaz" onclick="toggleMenu()">Posłuchaj</a>
+  <a href="#aktualnosci" onclick="toggleMenu()">Koncerty</a>
+  <a href="#o-nas" onclick="toggleMenu()">Historia</a>
+  <a href="#galeria" onclick="toggleMenu()">Galeria</a>
+  <a href="#english" onclick="toggleMenu()">EN</a>
+  <a href="#zaproszenia" onclick="toggleMenu()">Zaproś nas</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-panel">
+    <img loading="lazy" decoding="async" width="600" height="544" class="hero-kura-bg" src="media/a72d95bbba.png" alt="">
+    <img fetchpriority="high" decoding="async" width="600" height="544" class="hero-kura-accent" src="media/a72d95bbba.png" alt="Logo CHWDK">
+    <p class="hero-tag">Kobiecy chór z Mazowsza &nbsp;·&nbsp; od 2013</p>
+    <h1 class="hero-title">Chór Wydartych <em>Domom Kur</em></h1>
+    
+    <div class="hero-cta">
+      <a href="#reportaz" class="btn-fill">Posłuchaj nas</a>
+      <a href="#zaproszenia" class="btn-out">Zaproś nas</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img fetchpriority="high" decoding="async" width="1600" height="1200" src="media/hero-zespol.jpg" alt="Chór Wydartych Domom Kur">
+  </div>
+</section>
+
+<!-- MANIFEST -->
+<section class="manifest">
+  <p class="eyebrow">Kim jesteśmy</p>
+  <h2 class="h2 manifest-h">Kobiety, które<br>wydarły czas<br>dla <em>muzyki</em></h2>
+  <p class="manifest-txt">Jest nas dwadzieścia cztery. Soprany, mezzosoprany, alty. Na co dzień robimy zupełnie różne rzeczy — razem tworzymy Chór Wydartych Domom Kur.</p>
+  <p class="manifest-meta">Śpiewamy od 2013 · próby w każdy poniedziałek · Brwinów</p>
+</section>
+
+<!-- KURNIK -->
+
+<!-- CHÓRZYSTKI -->
+<section id="grzeda">
+  <div class="grz-gora">
+    <div class="grz-naglowek">
+      <p class="eyebrow">To właśnie my</p>
+      <h2 class="h2">Poznaj <em>kurnik</em></h2>
+      <p class="grz-lead">Kobiety, które kochają śpiewać! Nasze grzędy pomieszczą więcej Kurek! Może dołączysz?</p>
+    </div>
+    <div class="grz-szef-slot" id="grz-szef-slot"></div>
+  </div>
+  <div class="grz-scena" id="grz-scena"></div>
+</section>
+
+<style>
+/* ================= KURNIK — kolaż editorialowy ================= */
+#grzeda{background:#fff;padding:118px 56px 132px;position:relative;overflow:hidden}
+#grzeda::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:6;
+  opacity:.42;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E");background-size:120px 120px}
+.grz-naglowek{max-width:720px;margin:0 auto 82px;position:relative;z-index:4}
+.grz-lead{font-size:15px;line-height:1.75;color:var(--mid);max-width:46ch}
+.grz-scena{position:relative;max-width:1560px;margin:0 auto}
+
+.grz-rzad{position:relative;margin-bottom:4px}
+.grz-przewijak{position:relative;overflow-x:auto;overflow-y:visible;
+  -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;scrollbar-width:none;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 40px,#000 calc(100% - 40px),transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0,#000 40px,#000 calc(100% - 40px),transparent 100%)}
+.grz-przewijak::-webkit-scrollbar{display:none}
+.grz-rzad[data-miesci="1"] .grz-przewijak{-webkit-mask-image:none;mask-image:none}
+.grz-scena[data-przewija="1"] .grz-hint{display:flex}
+.grz-tor{position:relative;display:flex;align-items:flex-end;justify-content:flex-start;
+  width:max-content;min-width:100%;margin:0 auto;padding:0 40px 58px}
+.kura{scroll-snap-align:center}
+
+/* naczelna kura — dyrygentka prowadzi stado z osobnej grzędy */
+.grz-szefowa{position:relative;display:flex;flex-direction:column;align-items:center;
+  margin:0 0 46px;padding-bottom:56px}
+.grz-szefowa .kura{--w:auto}
+.grz-szefowa figcaption{opacity:1;transform:translateX(-50%)}
+.grz-szefowa figcaption b{font-size:22px}
+.grz-belka-szef{position:absolute;left:50%;bottom:43px;width:min(420px,72%);
+  margin-left:calc(min(420px,72%) / -2);height:30px;overflow:visible;pointer-events:none;z-index:3}
+.grz-belka-szef path{fill:none;stroke:var(--dark);stroke-linecap:round}
+.grz-belka-szef .b-gruba{stroke-width:2.1;opacity:.8}
+.grz-belka-szef .b-cienka{stroke-width:.8;opacity:.34}
+/* naczelna kura: korona wieksza, batuta, mocniejsza obecnosc */
+.grz-szefowa .kura-grzebien path{stroke-width:3}
+.dyr-batuta{position:absolute;z-index:5;left:50%;width:calc(var(--pw) * .86);overflow:visible;
+  margin-left:calc(var(--pw) / 2 - 4px);
+  bottom:calc(var(--nogi) + 30px + var(--ph) * .5);
+  transform-origin:4% 92%;transition:transform .5s cubic-bezier(.3,1.3,.4,1)}
+.dyr-batuta path{fill:none;stroke:var(--roz);stroke-width:2.8;stroke-linecap:round}
+.dyr-batuta circle{fill:var(--roz)}
+.grz-szefowa .kura:hover .dyr-batuta,.grz-szefowa .kura:focus .dyr-batuta{transform:rotate(-11deg)}
+.grz-szefowa .kura-papier{opacity:.58}
+.grz-szef-rola{margin-top:2px;font-family:'Syne',sans-serif;font-size:8.5px;font-weight:600;
+  letter-spacing:.28em;text-transform:uppercase;color:var(--roz)}
+@media(max-width:768px){
+  .grz-szefowa{margin-bottom:34px;padding-bottom:50px}
+  .grz-belka-szef{bottom:37px;width:74%;margin-left:-37%}
+  .grz-szefowa figcaption b{font-size:18px}
+}
+
+/* nagłówek głosu — duży, czytelny, nad grzędą; kreska prowadzi w prawo */
+.grz-etykieta{position:relative;z-index:4;display:flex;align-items:center;gap:20px;
+  margin:0 0 -10px;padding-left:2px;
+  font-family:'Syne',sans-serif;font-size:clamp(26px,3.6vw,58px);font-weight:800;
+  letter-spacing:-.02em;line-height:1;text-transform:uppercase;
+  white-space:nowrap;pointer-events:none;user-select:none}
+.grz-etykieta::after{content:'';flex:1;height:1px;background:currentColor;opacity:.32}
+
+/* grzęda — ręczna kreska tuszem, wychodzi poza kadr */
+.grz-belka{position:absolute;left:-7%;right:-7%;bottom:43px;height:30px;overflow:visible;pointer-events:none;z-index:3}
+.grz-belka path{fill:none;stroke:var(--dark);stroke-linecap:round;opacity:.8}
+.grz-belka .b-gruba{stroke-width:2.1}
+.grz-belka .b-cienka{stroke-width:.8;opacity:.34}
+
+/* ---------- postać ---------- */
+.kura{position:relative;flex:0 0 auto;width:var(--w);margin:0 var(--mr,0px) 0 var(--ml,0px);
+  transition:opacity .32s ease}
+.grz-scena:hover .kura{opacity:.3}
+.grz-scena:hover .kura:hover{opacity:1}
+.kura:focus{opacity:1;outline:none}
+.kura:hover,.kura:focus-visible{z-index:9}
+
+.kura-fig{position:relative;height:var(--h);
+  transform:rotate(var(--rot)) scale(var(--skala));
+  transform-origin:50% 100%;transition:transform .42s cubic-bezier(.22,.9,.3,1)}
+.kura:hover .kura-fig,.kura:focus-visible .kura-fig{
+  transform:rotate(calc(var(--rot) * .2)) scale(calc(var(--skala) * 1.04)) translateY(-8px)}
+
+/* offset drukarski: przesunięta plama koloru pod portretem */
+.kura-papier{position:absolute;left:50%;bottom:var(--nogi);width:var(--bw);height:var(--bh);
+  margin-left:calc(var(--bw) / -2 + var(--ox));
+  background:var(--kolor);opacity:var(--ba);clip-path:var(--ksztalt);z-index:1;
+  transition:transform .42s cubic-bezier(.22,.9,.3,1)}
+.kura:hover .kura-papier{transform:translateY(-3px)}
+
+.kura-portret{position:absolute;left:50%;bottom:calc(var(--nogi) + 30px);width:var(--pw);height:var(--ph);
+  margin-left:calc(var(--pw) / -2);z-index:3;display:flex;align-items:flex-end;justify-content:center}
+.kura-portret img{width:auto;height:100%;max-width:none;display:block;
+  filter:saturate(.9) contrast(1.04) drop-shadow(0 3px 7px rgba(20,10,0,.14))}
+.kura-portret.pusta{display:none}
+.kura.bez-foto .kura-grzebien{bottom:calc(var(--nogi) + var(--bh) * .93)}
+.kura.bez-foto .kura-papier{height:calc(var(--bh) * 1.34)}
+.kura.bez-foto .kura-skrzydlo{bottom:calc(var(--nogi) + var(--bh) * .5)}
+.kura-portret.pusta{background:color-mix(in srgb,var(--kolor) 13%,#fff);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--kolor) 26%,transparent)}
+
+
+/* kurze sygnały: nogi, ogon, grzebień */
+.kura-nogi{position:absolute;left:50%;bottom:0;width:var(--pw);margin-left:calc(var(--pw) / -2);
+  height:var(--nogi);z-index:2;overflow:visible}
+.kura-nogi path{fill:none;stroke:var(--dark);stroke-width:1.5;stroke-linecap:round;opacity:.72}
+.kura-ogon{position:absolute;z-index:0;overflow:visible;width:30px;
+  left:50%;margin-left:calc(var(--pw) / 2 - 13px);top:calc(var(--ph) * .58)}
+.kura-ogon path{fill:none;stroke:var(--dark);stroke-width:1.35;stroke-linecap:round;opacity:.6}
+.kura-grzebien{position:absolute;left:50%;z-index:4;overflow:visible;width:var(--gw);
+  bottom:calc(var(--nogi) + 30px + var(--ph) * (1 - var(--gtop)) - 7px);
+  margin-left:calc(var(--pw) * (1.042 * var(--gcx) - 0.521) - var(--gw) / 2)}
+.kura-grzebien path{fill:currentColor;stroke:currentColor;stroke-width:2.2;stroke-linejoin:round}
+/* skrzydlo — CALKOWICIE obok portretu, nigdy na twarzy */
+.kura-skrzydlo{position:absolute;z-index:1;overflow:visible;width:var(--sw);
+  top:calc(var(--gora) + var(--ph) * var(--sy));
+  transition:transform .5s cubic-bezier(.3,1.25,.4,1)}
+.kura-skrzydlo path{fill:none;stroke:var(--dark);stroke-width:1.3;stroke-linecap:round;stroke-opacity:.58}
+.kura-skrzydlo.s-lewe{left:50%;margin-left:calc(var(--pw) / -2 - var(--sw) - 7px);transform-origin:100% 8%}
+.kura-skrzydlo.s-prawe{left:50%;margin-left:calc(var(--pw) / 2 + 7px);transform-origin:0% 8%}
+.kura:hover .kura-skrzydlo.s-lewe,.kura:focus .kura-skrzydlo.s-lewe{transform:rotate(-14deg)}
+.kura:hover .kura-skrzydlo.s-prawe,.kura:focus .kura-skrzydlo.s-prawe{transform:rotate(14deg)}
+
+
+/* podpis — adnotacja redakcyjna z linią prowadzącą */
+.kura figcaption{position:absolute;left:50%;top:100%;margin-top:14px;z-index:8;
+  transform:translateX(-50%) translateY(4px);opacity:0;pointer-events:none;
+  transition:opacity .26s ease,transform .26s ease;text-align:center;white-space:nowrap}
+.kura:hover figcaption,.kura:focus figcaption{opacity:1;transform:translateX(-50%)}
+.kura figcaption b{display:block;font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:400;color:var(--dark)}
+.kura figcaption i{display:none;margin-top:2px;font-style:normal;font-family:'Syne',sans-serif;
+  font-size:8px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--kolor)}
+.kura figcaption::before{content:'';position:absolute;left:50%;top:-13px;width:1px;height:11px;
+  background:var(--kolor);opacity:.6}
+
+/* warianty art direction */
+#grzeda[data-w="b"] .kura-ogon{display:none}
+#grzeda[data-w="c"] .kura-ogon,#grzeda[data-w="c"] .kura-grzebien{display:none}
+#grzeda[data-w="c"] .kura-papier{opacity:.3}
+
+@media(max-width:1100px){
+  #grzeda{padding:92px 32px 104px}
+}
+@media(max-width:768px){
+  #grzeda{padding:64px 0 76px}
+  .grz-naglowek{padding:0 24px;margin-bottom:44px}
+  .grz-scena{max-width:none}
+  .grz-rzad{margin-bottom:16px}
+  .grz-etykieta{margin:0 24px 2px;gap:14px;font-size:clamp(22px,7.4vw,34px)}
+  /* scena eksplorowana poziomo — brzegi wygaszone, nic nie wygląda na ucięte */
+  .grz-przewijak{overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(to right,transparent 0,#000 34px,#000 calc(100% - 34px),transparent 100%);
+    mask-image:linear-gradient(to right,transparent 0,#000 34px,#000 calc(100% - 34px),transparent 100%)}
+  .grz-przewijak::-webkit-scrollbar{display:none}
+  .grz-tor{justify-content:flex-start;width:max-content;padding:0 34px 52px}
+  .kura{scroll-snap-align:center}
+  .kura figcaption{opacity:1;transform:translateX(-50%);margin-top:11px}
+  .kura figcaption b{font-size:16px}
+  .kura figcaption i{display:none}   /* glos mowi juz wielki napis nad grzeda */
+  .grz-szefowa figcaption i{display:block}
+  .kura figcaption::before{height:8px;top:-10px}
+  .grz-scena:hover .kura{opacity:1}
+  .grz-belka{left:0;right:0;bottom:37px}
+
+}
+.grz-hint{display:none;align-items:center;gap:8px;margin:2px 24px 0;
+  font-family:'Syne',sans-serif;font-size:8.5px;font-weight:600;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--mid);opacity:.62}
+.grz-hint span{display:block;width:26px;height:1px;background:currentColor;
+  animation:grzSun 2.6s ease-in-out infinite}
+@keyframes grzSun{0%,100%{transform:translateX(0);opacity:.5}50%{transform:translateX(7px);opacity:1}}
+
+@media(prefers-reduced-motion:reduce){
+  .kura-fig,.kura figcaption,.kura-papier,.kura{transition:none}
+  .kura:hover .kura-fig,.kura:focus-visible .kura-fig{
+    transform:rotate(var(--rot)) scale(var(--skala))}
+  .grz-hint span{animation:none}
+}
+
+/* ===== kurnik — kompakt: naglowek z naczelna kura, stado w jednej skali ===== */
+#grzeda{--bok-g:max(var(--gutter,clamp(24px,5vw,72px)),calc((100% - 1400px) / 2))}
+.grz-gora{position:relative;z-index:4;margin-bottom:36px}
+.grz-naglowek{margin:0!important;max-width:620px}
+.grz-etykieta{font-size:clamp(24px,2.5vw,36px);margin:0 0 -4px;gap:18px}
+.grz-hint{margin:0 0 10px 24px}
+@media(min-width:769px){
+  #grzeda{padding-left:var(--bok-g)!important;padding-right:var(--bok-g)!important;
+    padding-bottom:calc(var(--sek) - 28px)!important}
+  .grz-gora{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:40px;margin-bottom:22px}
+  .grz-szef-slot .grz-szefowa{margin:0;width:340px;padding-bottom:52px}
+  .grz-belka-szef{width:100%;margin-left:-50%}
+  .grz-scena{max-width:none}
+  .grz-tor{padding:14px 16px 44px}
+  .grz-rzad{margin-bottom:10px}
+  .grz-rzad[data-miesci="1"] .grz-tor{justify-content:center}
+  .grz-hint{margin-left:0}
+}
+/* grzeda na cala szerokosc rzedu (svg bez szerokosci bralo 1000px z viewBoxa) */
+.grz-belka{left:0;right:auto;width:100%}
+/* imiona zawsze widoczne — nie trzeba szukac kursorem */
+.kura figcaption,.grz-szefowa .kura figcaption{opacity:1;transform:translateX(-50%)}
+.kura figcaption b{font-size:16px;line-height:1.15}
+.grz-szefowa .kura figcaption b{font-size:20px}
+.grz-szefowa .kura figcaption i{display:block;font-size:9px}
+.kura figcaption::before{height:8px;top:-10px}
+.kura figcaption{margin-top:11px}
+@media(min-width:769px){
+  .grz-tor{padding-bottom:40px}
+  #grzeda{padding-bottom:calc(var(--sek) - 44px)!important}
+}
+@media(hover:hover) and (min-width:769px){
+  .kura:hover .kura-fig,.kura:focus-visible .kura-fig{
+    transform:rotate(calc(var(--rot) * .2)) scale(calc(var(--skala) * 1.1)) translateY(-4px)}
+}
+@media(max-width:768px){
+  .grz-gora{margin-bottom:8px}
+  .grz-naglowek{padding:0 24px;margin-bottom:28px!important}
+  .grz-szef-slot .grz-szefowa{margin:0 0 20px}
+  .grz-etykieta{font-size:26px;margin:0 24px 0}
+  .grz-belka{width:100%}
+  .grz-rzad{margin-bottom:4px}
+  .grz-tor{padding-bottom:42px}
+}
+</style>
+
+<script>
+  // SKŁAD CHÓRU — jedna osoba = jedna linia. glos: "sopran" | "mezzosopran" | "alt"; foto: null (bez zdjęcia) albo "media/c-….png".
+  // Pozostałe pola (rot, dy, kolor, grzebien, odbicie, skrzydlo) to drobne różnice w wyglądzie kury — przy nowej osobie skopiuj je od sąsiadki.
+  var CHOR=[
+    {"imie": "Alicja", "glos": "sopran", "foto": null, "rot": -2.5, "dy": -2, "kolor": 0, "grzebien": 1, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Jagoda", "glos": "sopran", "foto": "media/c-jagoda.png", "rot": 1.6, "dy": 3, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Kasia M.", "glos": "sopran", "foto": "media/c-kasiam.png", "rot": -1.0, "dy": -5, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 1},
+    {"imie": "Kasia W.", "glos": "sopran", "foto": "media/c-kasiaw.png", "rot": 2.0, "dy": 1, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Małgosia", "glos": "sopran", "foto": "media/c-malgosia.png", "rot": -1.6, "dy": 4, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Marta", "glos": "sopran", "foto": null, "rot": 0.6, "dy": -2, "kolor": 1, "grzebien": 1, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Stella", "glos": "sopran", "foto": "media/c-stella.png", "rot": -2.0, "dy": 2, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Agata O.", "glos": "mezzosopran", "foto": "media/c-agatao.png", "rot": 1.2, "dy": -4, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Ania Ż.", "glos": "mezzosopran", "foto": null, "rot": -1.4, "dy": 2, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 1},
+    {"imie": "Dobrochna", "glos": "mezzosopran", "foto": null, "rot": 2.4, "dy": -1, "kolor": 1, "grzebien": 1, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Dorota", "glos": "mezzosopran", "foto": "media/c-dorota.png", "rot": -0.6, "dy": 5, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Dorota M.", "glos": "mezzosopran", "foto": "media/c-dorotam.png", "rot": 1.6, "dy": -3, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Ela", "glos": "mezzosopran", "foto": null, "rot": -2.2, "dy": 1, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Inka", "glos": "mezzosopran", "foto": "media/c-inka.png", "rot": 0.6, "dy": 3, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Magda T.", "glos": "mezzosopran", "foto": "media/c-magdat.png", "rot": -1.0, "dy": -2, "kolor": 2, "grzebien": 1, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Agata", "glos": "alt", "foto": null, "rot": 2.0, "dy": 2, "kolor": 3, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Ania S.", "glos": "alt", "foto": null, "rot": -1.6, "dy": -4, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Basia", "glos": "alt", "foto": "media/c-basia.png", "rot": 1.0, "dy": 1, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 1},
+    {"imie": "Bożenka", "glos": "alt", "foto": null, "rot": -2.5, "dy": -1, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Dorota", "glos": "alt", "foto": null, "rot": 1.4, "dy": 4, "kolor": 3, "grzebien": 1, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Kamila", "glos": "alt", "foto": "media/c-kamila.png", "rot": -1.0, "dy": -3, "kolor": 0, "grzebien": 0, "odbicie": 0, "skrzydlo": 0},
+    {"imie": "Karolina", "glos": "alt", "foto": "media/c-karolina.png", "rot": -1.4, "dy": -3, "kolor": 2, "skrzydlo": 0, "odbicie": 1, "grzebien": 0},
+    {"imie": "Magda G.S.", "glos": "alt", "foto": null, "rot": 0.6, "dy": 0, "kolor": 1, "grzebien": 0, "odbicie": 1, "skrzydlo": 0},
+    {"imie": "Ola N.", "glos": "alt", "foto": "media/c-olan.png", "rot": -2.0, "dy": 2, "kolor": 2, "grzebien": 0, "odbicie": 0, "skrzydlo": 0}
+  ];
+  // NACZELNA KURA (dyrygentka)
+  var DYR={"imie": "Aleksandra Kopp", "rola": "dyrygentka", "foto": "media/c-oladyr.png"};
+  </script>
+<script>
+(function(){
+  var KS=['polygon(50.0% 1.6%, 69.4% 5.6%, 85.5% 15.1%, 94.4% 30.9%, 97.9% 50.0%, 94.4% 68.4%, 85.1% 86.4%, 68.5% 95.0%, 50.0% 100.0%, 30.7% 95.8%, 13.1% 83.9%, 2.3% 68.8%, 1.6% 50.0%, 4.6% 30.3%, 15.7% 14.4%, 30.6% 4.3%)','polygon(50.0% 2.0%, 68.4% 5.0%, 85.9% 14.9%, 95.4% 30.7%, 99.8% 50.0%, 97.4% 69.5%, 84.5% 85.6%, 69.2% 97.8%, 50.0% 99.0%, 30.0% 94.6%, 14.9% 86.2%, 5.3% 69.1%, 2.1% 50.0%, 2.7% 30.7%, 13.4% 15.2%, 30.5% 3.4%)','polygon(50.0% 0.2%, 69.7% 2.0%, 85.3% 14.1%, 94.4% 30.5%, 100.0% 50.0%, 97.5% 68.8%, 85.0% 85.9%, 68.3% 96.0%, 50.0% 98.3%, 31.6% 97.3%, 15.8% 84.6%, 4.3% 69.8%, 1.9% 50.0%, 3.6% 30.2%, 13.6% 13.5%, 31.2% 4.2%)','polygon(50.0% 0.0%, 69.9% 5.3%, 84.3% 15.5%, 95.1% 30.9%, 100.0% 50.0%, 94.1% 69.0%, 84.9% 85.6%, 69.9% 97.0%, 50.0% 100.0%, 30.6% 94.3%, 13.4% 86.2%, 2.2% 69.6%, 0.5% 50.0%, 5.5% 30.6%, 16.0% 16.0%, 31.4% 5.2%)'];
+  var BELKI=['M0 13.86 C 34.0 13.86, 66.0 14.18, 100.0 14.18 C 134.0 14.18, 166.0 15.27, 200.0 15.27 C 234.0 15.27, 266.0 13.90, 300.0 13.90 C 334.0 13.90, 366.0 14.02, 400.0 14.02 C 434.0 14.02, 466.0 14.26, 500.0 14.26 C 534.0 14.26, 566.0 13.05, 600.0 13.05 C 634.0 13.05, 666.0 14.04, 700.0 14.04 C 734.0 14.04, 766.0 14.39, 800.0 14.39 C 834.0 14.39, 866.0 14.88, 900.0 14.88 C 934.0 14.88, 966.0 12.78, 1000.0 12.78','M0 15.27 C 34.0 15.27, 66.0 15.35, 100.0 15.35 C 134.0 15.35, 166.0 15.18, 200.0 15.18 C 234.0 15.18, 266.0 12.75, 300.0 12.75 C 334.0 12.75, 366.0 14.28, 400.0 14.28 C 434.0 14.28, 466.0 13.77, 500.0 13.77 C 534.0 13.77, 566.0 14.09, 600.0 14.09 C 634.0 14.09, 666.0 12.89, 700.0 12.89 C 734.0 12.89, 766.0 13.08, 800.0 13.08 C 834.0 13.08, 866.0 13.83, 900.0 13.83 C 934.0 13.83, 966.0 13.16, 1000.0 13.16','M0 14.55 C 34.0 14.55, 66.0 12.77, 100.0 12.77 C 134.0 12.77, 166.0 14.35, 200.0 14.35 C 234.0 14.35, 266.0 15.03, 300.0 15.03 C 334.0 15.03, 366.0 15.00, 400.0 15.00 C 434.0 15.00, 466.0 14.05, 500.0 14.05 C 534.0 14.05, 566.0 14.39, 600.0 14.39 C 634.0 14.39, 666.0 13.61, 700.0 13.61 C 734.0 13.61, 766.0 14.08, 800.0 14.08 C 834.0 14.08, 866.0 12.82, 900.0 12.82 C 934.0 12.82, 966.0 14.55, 1000.0 14.55'];
+  var GLOWY={'agatao':[0.129,0.566],'basia':[0.032,0.429],'dorota':[0.158,0.421],'dorotam':[0.055,0.487],'inka':[0.100,0.428],'jagoda':[0.192,0.494],'kamila':[0.024,0.517],'karolina':[0.013,0.456],'kasiam':[0.000,0.451],'kasiaw':[0.074,0.502],'magdat':[0.161,0.507],'malgosia':[0.024,0.504],'oladyr':[0.000,0.493],'olan':[0.053,0.477],'stella':[0.255,0.634]};
+  var KOLORY={sopran:'var(--roz)',mezzosopran:'var(--fiolet)',alt:'var(--por)'};
+  var GRZEBIENIE=['var(--roz)','var(--por)','var(--fiolet)','var(--blad)'];
+  var GRUPY=[{k:'sopran',e:'Soprany',c:'var(--roz)',n:'sopran'},
+             {k:'mezzosopran',e:'Mezzo',c:'var(--fiolet)',n:'mezzosopran'},
+             {k:'alt',e:'Alty',c:'var(--por)',n:'alt'}];
+
+  var scena=document.getElementById('grz-scena');
+  var PW=scena?policzPW():104;
+  var wariant=(location.search.match(/[?&]w=([abc])/)||[])[1]||'b';
+  var sek=document.getElementById('grzeda'); if(sek) sek.dataset.w=wariant;
+
+  function nogi(o,i){
+    var rozstaw = 14 + (i%3)*3;
+    var lx=50-rozstaw, px=50+rozstaw;
+    return '<svg class="kura-nogi" viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">'
+      +'<path d="M'+lx+' 0 C'+(lx-1)+' 18, '+(lx+1)+' 32, '+lx+' 46 M'+lx+' 46 l-6 8 M'+lx+' 46 l0 9 M'+lx+' 46 l6 8"/>'
+      +'<path d="M'+px+' 0 C'+(px+1)+' 18, '+(px-1)+' 32, '+px+' 46 M'+px+' 46 l-6 8 M'+px+' 46 l0 9 M'+px+' 46 l6 8"/>'
+      +'</svg>';
+  }
+  function ogon(i){
+    var a=i%2? 'M0 20 C8 15, 16 8, 25 3 M1 26 C9 22, 18 15, 27 9 M3 31 C11 28, 19 23, 28 17'
+             : 'M0 19 C7 13, 15 7, 23 2 M2 27 C10 22, 18 15, 26 10';
+    return '<svg class="kura-ogon" viewBox="0 0 30 34" aria-hidden="true"><path d="'+a+'"/></svg>';
+  }
+  var SKRZYDLA=[
+    'M28 2 C16 6, 7 16, 3 30 M28 10 C18 13, 11 21, 7 33 M28 18 C21 20, 16 26, 12 36',
+    'M28 3 C17 8, 8 18, 4 31 M28 13 C19 17, 13 25, 10 35',
+    'M28 1 C18 4, 10 12, 5 24 M28 8 C19 11, 12 19, 8 30 M28 15 C21 17, 15 24, 11 33 M28 22 C23 24, 19 29, 16 37',
+    'M28 5 C18 10, 10 20, 6 32 M28 15 C20 19, 14 26, 11 36'
+  ];
+  function skrzydlo(o,i){
+    var d=SKRZYDLA[(o.kolor+i)%SKRZYDLA.length];
+    var prawe=(i%2)===1;
+    var srodek = prawe
+      ? '<g transform="translate(30,0) scale(-1,1)"><path d="'+d+'"/></g>'   // lustro WEWNATRZ svg
+      : '<path d="'+d+'"/>';
+    return '<svg class="kura-skrzydlo '+(prawe?'s-prawe':'s-lewe')+'" viewBox="0 0 30 40" aria-hidden="true">'+srodek+'</svg>';
+  }
+  function grzebien(o){
+    var pula=GRZEBIENIE.filter(function(c){return c!==KOLORY[o.glos];});
+    var c=pula[(o.kolor+(o.dy<0?1:0))%pula.length];
+    var w=[ 'M2 15 L7 2 L12 10 L17 1 L22 9 L27 3 L31 15 Z',
+            'M2 15 L6 4 L11 11 L15 2 L20 10 L25 5 L30 15 Z',
+            'M3 15 L8 3 L13 9 L18 2 L24 11 L29 4 L31 15 Z' ][o.kolor%3];
+    return '<svg class="kura-grzebien" viewBox="0 0 32 15" aria-hidden="true" style="color:'+c+'">'
+      +'<path d="'+w+'"/></svg>';
+  }
+
+  // wszystkie wymiary kury wynikaja z szerokosci portretu pw — glowy zawsze w tej samej skali
+  function ustaw(f,o,i,pw){
+    var st=f.style, k=pw/136;
+    var ph=Math.round(pw*1.24), sw=Math.round(pw*0.30);
+    st.setProperty('--sw', sw+'px');
+    st.setProperty('--sy', (0.40+((i*11)%4)*0.045).toFixed(2));
+    st.setProperty('--pw', pw+'px');
+    st.setProperty('--ph', ph+'px');
+    var nogiH=Math.round((26+((i*13)%4)*7)*k);     // rytm wysokosci
+    st.setProperty('--nogi', nogiH+'px');
+    st.setProperty('--bw', Math.round(pw*1.04)+'px');
+    st.setProperty('--bh', Math.round(ph*0.56)+'px');
+    st.setProperty('--ba', (o.foto?0.44:0.6));
+    st.setProperty('--gora', Math.round(16*k)+'px');
+    st.setProperty('--h', (ph+nogiH+Math.round(56*k))+'px');
+    // miejsce na skrzydlo tylko po tej stronie, gdzie ono jest — bez pustego boku
+    var prawe=(i%2)===1, skrz=sw+6, j=1+((i*29)%3);
+    st.setProperty('--w', (pw+8)+'px');
+    st.setProperty('--ml', ((prawe?0:skrz)+j)+'px');
+    st.setProperty('--mr', ((prawe?skrz:0)+j)+'px');
+    st.setProperty('--ox', Math.round(((i%2)?7:-7)*k)+'px');
+    st.setProperty('--gw', Math.round(pw*0.36)+'px');
+  }
+  function ustawSzef(f,pw0){
+    var pw=Math.round(pw0*1.16), k=pw/150;
+    ustaw(f,f._o,1,pw);
+    var ph=Math.round(pw*1.193), nog=Math.round(44*k);
+    f.style.setProperty('--ph',ph+'px');
+    f.style.setProperty('--nogi',nog+'px');
+    f.style.setProperty('--gora',Math.round(18*k)+'px');
+    f.style.setProperty('--h',(ph+nog+Math.round(58*k))+'px');
+    f.style.setProperty('--gw',Math.round(pw*0.413)+'px');
+    f.style.setProperty('--ml','0px'); f.style.setProperty('--mr','0px');
+    f.style.setProperty('--w','auto');
+  }
+  function policzPW(){
+    if(innerWidth<769) return 94;
+    var n=Math.max.apply(null,GRUPY.map(function(g){return CHOR.filter(function(o){return o.glos===g.k;}).length;}));
+    var pw=Math.floor(((scena.clientWidth-32)/n-19)/1.3);
+    if(pw<80) return 94;               // i tak trzeba przewijac — wtedy wieksze twarze
+    return Math.min(120,pw);
+  }
+
+  function kura(o,i,glosNazwa){
+    var f=document.createElement('figure');
+    f.className='kura'+(o.foto?'':' bez-foto'); f.tabIndex=0;
+    var st=f.style;
+    f._o=o; f._i=i;
+    st.setProperty('--rot', o.rot+'deg');
+    st.setProperty('--skala', (0.97+((o.kolor*7+i)%4)*0.021).toFixed(3));
+    st.setProperty('--kolor', KOLORY[o.glos]);
+    st.setProperty('--ksztalt', KS[(i+o.kolor)%KS.length]);
+    var klucz=(o.foto||'').replace('media/c-','').replace('.png','');
+    var gm=GLOWY[klucz]||[0.06,0.5];
+    st.setProperty('--gtop', gm[0]);
+    st.setProperty('--gcx', gm[1]);
+    ustaw(f,o,i,PW);
+
+
+    var portret = o.foto
+      ? '<span class="kura-portret"><img src="'+o.foto+'" alt="'+o.imie+'" loading="lazy" decoding="async"></span>'
+      : '<span class="kura-portret pusta" role="img" aria-label="'+o.imie+' — zdjęcie wkrótce"></span>';
+    f.innerHTML='<div class="kura-fig">'+(wariant==='a'?ogon(i):'')+'<span class="kura-papier"></span>'+portret
+      +grzebien(o)+skrzydlo(o,i)+nogi(o,i)+'</div>'
+      +'<figcaption><b>'+o.imie+'</b><i>'+glosNazwa+'</i></figcaption>';
+    return f;
+  }
+
+  function belka(gi){
+    return '<svg class="grz-belka" viewBox="0 0 1000 30" preserveAspectRatio="none" aria-hidden="true">'
+      +'<path class="b-gruba" d="'+BELKI[gi]+'"/>'
+      +'<path class="b-cienka" d="'+BELKI[gi]+'" transform="translate(0,3.4)"/></svg>';
+  }
+
+  if(!scena) return;
+
+  var SZEF=null;
+  // naczelna kura — wieksza, na wlasnej grzedzie, obok naglowka
+  (function(){
+    var szef={imie:DYR.imie,glos:'sopran',foto:DYR.foto,rot:-1.2,dy:0,kolor:0};
+    var f=kura(szef,1,'naczelna kura');
+    ustawSzef(f,PW); SZEF=f;
+    f.querySelector('.kura-fig').insertAdjacentHTML('beforeend',
+      '<svg class="dyr-batuta" viewBox="0 0 132 92" aria-hidden="true">'
+      + '<path d="M4 88 C34 78, 66 56, 96 22"/><circle cx="99" cy="18" r="6.5"/></svg>');
+    var box=document.createElement('div'); box.className='grz-szefowa';
+    box.innerHTML='<svg class="grz-belka-szef" viewBox="0 0 1000 30" preserveAspectRatio="none" aria-hidden="true">'
+      +'<path class="b-gruba" d="'+BELKI[2]+'"/>'
+      +'<path class="b-cienka" d="'+BELKI[2]+'" transform="translate(0,3.4)"/></svg>';
+    box.appendChild(f);
+    (document.getElementById('grz-szef-slot')||scena).appendChild(box);
+  })();
+
+  GRUPY.forEach(function(g,gi){
+    var osoby=CHOR.filter(function(o){return o.glos===g.k;});
+    var rzad=document.createElement('div'); rzad.className='grz-rzad';
+    var przew=document.createElement('div'); przew.className='grz-przewijak';
+    var tor=document.createElement('div'); tor.className='grz-tor';
+    osoby.forEach(function(o,i){ tor.appendChild(kura(o,i,g.n)); });
+    tor.insertAdjacentHTML('afterbegin',belka(gi));
+    przew.appendChild(tor); rzad.appendChild(przew);
+    rzad.insertAdjacentHTML('afterbegin','<span class="grz-etykieta" style="color:'+g.c+'">'+g.e+'</span>');
+    scena.appendChild(rzad);
+  });
+
+  scena.insertAdjacentHTML('afterbegin','<p class="grz-hint"><span></span>przesuń w bok, żeby poznać resztę</p>');
+
+  // po zmianie szerokosci okna przelicz rozmiar stada
+  function przelicz(){
+    var nowe=policzPW(); if(nowe===PW) return zmierz();
+    PW=nowe;
+    [].forEach.call(scena.querySelectorAll('.grz-tor .kura'),function(f){ ustaw(f,f._o,f._i,PW); });
+    if(SZEF) ustawSzef(SZEF,PW);
+    zmierz();
+  }
+  var ostW=innerWidth, tRes=0;
+  addEventListener('resize',function(){
+    if(Math.abs(innerWidth-ostW)<24) return;
+    clearTimeout(tRes); tRes=setTimeout(function(){ ostW=innerWidth; przelicz(); },120);
+  },{passive:true});
+  document.addEventListener('DOMContentLoaded',przelicz);
+  addEventListener('load',przelicz);
+
+  function zmierz(){
+    var przewija=false;
+    [].forEach.call(scena.querySelectorAll('.grz-przewijak'),function(pw){
+      var wystaje = pw.scrollWidth > pw.clientWidth + 4;
+      var rz = pw.parentNode;
+      rz.setAttribute('data-miesci', wystaje ? '0' : '1');
+      if(wystaje) przewija = true;
+    });
+    scena.setAttribute('data-przewija', przewija ? '1' : '0');
+  }
+  zmierz();
+  addEventListener('resize', zmierz, {passive:true});
+  addEventListener('load', zmierz);
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(zmierz);
+  [].forEach.call(scena.querySelectorAll('img'),function(im){
+    if(!im.complete) im.addEventListener('load', zmierz, {once:true});
+  });
+
+  scena.addEventListener('click',function(e){
+    var k=e.target.closest?e.target.closest('.kura'):null; if(k) k.focus();
+  });
+})();
+</script>
+<!-- DYRYGENTKA -->
+<section class="dyr-wrap" id="dyrygentka">
+  <div class="dyr-grid">
+    <div class="dyr-foto">
+      <img loading="lazy" decoding="async" width="525" height="700" src="media/0c5cfe5c05.jpg" alt="Aleksandra Kopp">
+    </div>
+    <div class="dyr-tekst">
+      <p class="eyebrow">Za pulpitem</p>
+      <h2 class="h2">Aleksandra<br><em>Kopp</em></h2>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:#999;margin-bottom:28px;font-weight:300">Chórmistrzyni · Dyrygent · Trener Wokalny</p>
+      <div style="width:40px;height:1px;background:var(--roz);margin-bottom:28px"></div>
+      <div class="body-txt" style="max-width:520px">
+        <p>Aleksandra Kopp to jedna z najbardziej wszechstronnych postaci polskiej sceny chóralnej. Wieloletnia dyrygentka i kierowniczka chóru w Państwowym Zespole Ludowym Pieśni i Tańca <strong style="color:var(--dark);font-weight:500">„Mazowsze"</strong>.</p>
+        <p>To właśnie ona przygotowała wokalnie <strong style="color:var(--dark);font-weight:500">Joannę Kulig</strong> do roli w filmie Pawła Pawlikowskiego <em>„Zimna Wojna"</em> — w tym do kultowego wykonania <em>„Dwóch Serduszek"</em>, które obiegło cały świat.</p>
+        <p>Ambasadorka Stalowej Woli, trenerka wokalna z bogatym dorobkiem. Pierwsza dyrygentka CHWDK — od lutego 2026 roku ponownie stoi za pulpitem chóru.</p>
+      </div>
+      <div class="dyr-tagi">
+        <span class="dyr-tag">Pierwsza dyrygentka CHWDK</span>
+        <span class="dyr-tag">Zespół Mazowsze</span>
+        <span class="dyr-tag">Zimna Wojna</span>
+        <span class="dyr-tag">Trener Wokalny</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POSŁUCHAJ NAS -->
+<section class="pos-wrap" id="reportaz">
+  <div class="pos-naglowek">
+    <p class="eyebrow">Posłuchaj nas</p>
+    <h2 class="h2">Jak <em>brzmimy</em></h2>
+    <p class="pos-lead">Nagrania z Otwartych Ogrodów 2026 — Milanówek i Podkowa Leśna. Pieśni z gór, a cappella i z towarzyszeniem.</p>
+  </div>
+
+  <figure class="pos-glowny">
+    <div class="pos-ekran" id="pos-ekran">
+      <button class="pos-fasada" type="button" id="pos-fasada" aria-label="Odtwórz: Reportaż z Otwartych Ogrodów">
+        <img id="pos-fasada-img" loading="lazy" decoding="async" width="720" height="405" src="media/yt-9oScq5ael9s.jpg" alt="">
+        <span class="pos-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+      </button>
+    </div>
+    <figcaption class="pos-podpis-duzy">
+      <strong id="pos-tytul">Reportaż z Otwartych Ogrodów</strong>
+      <span id="pos-miejsce">Podkowa Leśna · realizacja Ewa Gola</span>
+    </figcaption>
+  </figure>
+
+  <div class="pos-boczna">
+    <p class="pos-etykieta">Wszystkie nagrania <span>7</span></p>
+    <ol class="pos-lista">
+      <li><button type="button" class="pos-poz aktywny" data-yt="9oScq5ael9s" data-tytul="Reportaż z Otwartych Ogrodów" data-miejsce="Podkowa Leśna · realizacja Ewa Gola" aria-current="true"><span class="pos-poz-min"><img src="media/yt-9oScq5ael9s.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Reportaż z Otwartych Ogrodów</b><span>Podkowa Leśna · realizacja Ewa Gola</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="89w16tSKvzk" data-tytul="Hej Skoda" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-89w16tSKvzk.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Hej Skoda</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="OLZ3QUiLgJg" data-tytul="Piyrso Godzina" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-OLZ3QUiLgJg.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Piyrso Godzina</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="Pua_ksc1Tx8" data-tytul="Górole, Górole" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-Pua_ksc1Tx8.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Górole, Górole</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="cS69qde7KHA" data-tytul="Hej Kiejo" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-cS69qde7KHA.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Hej Kiejo</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="waHOk4bjIwQ" data-tytul="Idzie Dysc" data-miejsce="Milanówek"><span class="pos-poz-min"><img src="media/yt-waHOk4bjIwQ.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Idzie Dysc</b><span>Milanówek</span></span></button></li>
+      <li><button type="button" class="pos-poz" data-yt="qO7svHCsEWU" data-tytul="Rycerz" data-miejsce="aranżacja Michał Haber"><span class="pos-poz-min"><img src="media/yt-qO7svHCsEWU.jpg" width="720" height="405" alt="" loading="lazy" decoding="async"></span><span class="pos-poz-txt"><b>Rycerz</b><span>aranżacja Michał Haber</span></span></button></li>
+    </ol>
+  </div>
+
+  <a class="pos-kanal" href="https://www.youtube.com/@chorwydartychdomomkur6706" target="_blank" rel="noopener">
+    Cały kanał na YouTube <span aria-hidden="true">→</span></a>
+</section>
+
+<style>
+.pos-wrap{background:var(--krem)}
+.pos-naglowek{max-width:720px;margin-bottom:40px}
+.pos-lead{font-size:15.5px;line-height:1.75;color:var(--mid)}
+.pos-glowny{margin:0}
+.pos-ekran{position:relative;aspect-ratio:16/9;background:#0d0d0d;border-radius:3px;overflow:hidden}
+.pos-ekran iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.pos-fasada{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;cursor:pointer;background:#0d0d0d;line-height:0}
+.pos-fasada img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.22,.9,.3,1),opacity .3s}
+.pos-fasada:hover img{transform:scale(1.025);opacity:.88}
+.pos-fasada:focus-visible{outline:3px solid var(--roz);outline-offset:3px}
+.pos-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:84px;height:84px;border-radius:50%;
+  background:var(--roz);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(232,23,93,.35);transition:transform .25s,background .25s}
+.pos-play svg{width:32px;height:32px;fill:#fff;margin-left:4px}
+.pos-fasada:hover .pos-play{transform:translate(-50%,-50%) scale(1.07);background:#c8104e}
+.pos-podpis-duzy{margin-top:16px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+.pos-podpis-duzy strong{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--dark)}
+.pos-podpis-duzy span{font-family:'Syne',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--mid)}
+.pos-etykieta{display:flex;align-items:center;justify-content:space-between;font-family:'Syne',sans-serif;font-size:10.5px;
+  font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--roz);margin:0 0 10px;
+  padding-bottom:12px;border-bottom:1px solid rgba(232,23,93,.2)}
+.pos-etykieta span{color:var(--mid);font-weight:600}
+.pos-lista{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.pos-poz{width:100%;display:grid;grid-template-columns:132px 1fr;gap:16px;align-items:center;padding:8px;
+  border:0;background:transparent;border-radius:3px;cursor:pointer;text-align:left;
+  transition:background .2s;min-height:48px}
+.pos-poz:hover{background:rgba(15,15,15,.05)}
+.pos-poz:focus-visible{outline:2px solid var(--roz);outline-offset:1px}
+.pos-poz.aktywny{background:#fff;box-shadow:inset 3px 0 0 var(--roz)}
+.pos-poz-min{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:2px;background:#ccc}
+.pos-poz-min img{width:100%;height:100%;object-fit:cover;display:block}
+.pos-poz.aktywny .pos-poz-min::after{content:'▶';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:rgba(232,23,93,.55);color:#fff;font-size:15px}
+.pos-poz-txt b{display:block;font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:400;color:var(--dark);line-height:1.2}
+.pos-poz-txt span{display:block;margin-top:4px;font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mid)}
+.pos-kanal{display:inline-flex;align-items:center;gap:9px;margin-top:36px;text-decoration:none;min-height:44px;
+  font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--dark);border-bottom:1px solid var(--roz)}
+.pos-kanal span{color:var(--roz);transition:transform .25s;display:inline-block}
+.pos-kanal:hover span{transform:translateX(5px)}
+/* desktop: odtwarzacz + lista obok */
+@media(min-width:1000px){
+  .pos-wrap{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(300px,1fr);column-gap:44px;
+    grid-template-areas:"nag nag" "glowny boczna" "kanal kanal";align-items:start}
+  .pos-naglowek{grid-area:nag}
+  .pos-glowny{grid-area:glowny}
+  .pos-boczna{grid-area:boczna}
+  .pos-kanal{grid-area:kanal;justify-self:start;margin-top:20px}
+}
+@media(max-width:999px){
+  .pos-boczna{margin-top:32px}
+}
+@media(max-width:768px){
+  .pos-naglowek{margin-bottom:28px}
+  .pos-play{width:64px;height:64px}
+  .pos-play svg{width:25px;height:25px}
+  .pos-podpis-duzy strong{font-size:21px}
+  .pos-poz{grid-template-columns:112px 1fr;gap:14px;padding:7px 6px}
+  .pos-poz-txt b{font-size:18px}
+}
+</style>
+
+<script>
+(function(){
+  var ekran=document.getElementById('pos-ekran'); if(!ekran) return;
+  var tyt=document.getElementById('pos-tytul'), miej=document.getElementById('pos-miejsce');
+  var poz=[].slice.call(document.querySelectorAll('.pos-poz'));
+  function graj(b){
+    poz.forEach(function(x){ x.classList.toggle('aktywny',x===b); if(x===b) x.setAttribute('aria-current','true'); else x.removeAttribute('aria-current'); });
+    tyt.textContent=b.dataset.tytul; miej.textContent=b.dataset.miejsce;
+    ekran.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0&modestbranding=1"'
+      +' title="CHWDK — '+b.dataset.tytul.replace(/"/g,'')+'" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  }
+  document.getElementById('pos-fasada').addEventListener('click',function(){ graj(poz[0]); });
+  poz.forEach(function(b){ b.addEventListener('click',function(){
+    graj(b);
+    if(innerWidth<1000) ekran.scrollIntoView({behavior:'smooth',block:'center'});
+  }); });
+})();
+</script>
+
+<!-- AKTUALNOŚCI -->
+<section class="aktual-wrap" id="aktualnosci">
+  <div class="aktual-inner">
+    <div class="aktual-plakat"><img loading="lazy" decoding="async" width="707" height="1000" src="media/a647eacd65.jpg" alt="Chór KUR on Tour — plakat trasy ogrodowej"></div>
+    <div>
+      <p class="eyebrow">Gdzie występujemy</p>
+      <h2 class="h2">Kalendarz<br><em>koncertów</em> 2026</h2>
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--dark);margin-bottom:22px;line-height:1.65">„Hej, kie jo se zaśpiewom" — pieśni z gór<br>Repertuar zakopiański</p>
+      <div class="aktual-date">wrzesień 2026</div>
+      <div class="aktual-miejsce"><strong>06.09</strong> · Brwinów, Dni Brwinowa — wspólny koncert z Mozilem</div>
+      <hr class="aktual-sep">
+      <div class="aktual-miejsce"><strong>12.09</strong> · Otrębusy, Festyn</div>
+      <hr class="aktual-sep">
+      <div class="aktual-miejsce"><strong>20.09</strong> · Milanówek, Sploty</div>
+      <hr class="aktual-sep" style="margin-top:18px">
+      <p style="font-size:12px;color:var(--mid);margin-top:4px">Pod batutą Aleksandry Kopp</p>
+    </div>
+  </div>
+</section>
+
+<div class="scene-full">
+  <img loading="lazy" decoding="async" width="1000" height="750" src="media/5ede44abce.jpg" alt="CHWDK na scenie">
+  <div class="scene-overlay">
+    <div class="scene-txt">
+      <blockquote>„Chcemy śpiewać<br>w nowych miejscach."</blockquote>
+      <cite>CHWDK · Brwinów · od 2013</cite>
+    </div>
+  </div>
+</div>
+
+<!-- O NAS -->
+<div class="onas-grid" id="o-nas">
+  <div class="onas-tekst">
+    <p class="eyebrow">Historia</p>
+    <h2 class="h2">Skąd<br><em>przyszłyśmy</em></h2>
+    <div class="body-txt">
+      <p>Chór Wydartych Domom Kur powstał w 2013 roku z inicjatywy Anny Sobczak, ówczesnej dyrektorki Domu Kultury Brwinów. Nazwę wymyśliła Anna Żaczek-Siwczuk. Chór skupia kobiety, które na co dzień nie zajmują się muzyką zawodowo — śpiewają z czystej miłości do sztuki.</p>
+      <p>Przez ponad 10 lat koncertowałyśmy lokalnie i ogólnopolsko, zdobywałyśmy nagrody, dotarłyśmy do Wilna i na Warszawską Jesień. W 2024 roku wzięłyśmy udział w akcji „Depresja? Nie!" i spektaklu „Pieśni codzienności — nigunim".</p>
+      <p>Próby w każdy poniedziałek · OKej Brwinów.</p>
+    </div>
+  </div>
+  <div class="onas-zdjecie"><img loading="lazy" decoding="async" width="1000" height="750" src="media/95d68cfd43.jpg" alt="Chór CHWDK"></div>
+</div>
+
+<!-- KALENDARIUM -->
+<section style="background:var(--dark);padding:124px 64px" id="historia">
+  <div class="hist-nag">
+    <p class="eyebrow" style="color:var(--por)">Kalendarium</p>
+    <h2 class="h2" style="color:#fff;margin-bottom:56px">Nasza <em>droga</em></h2>
+  </div>
+
+  <div style="position:relative;max-width:760px">
+    <div style="position:absolute;left:72px;top:6px;bottom:0;width:1px;background:#1f1f1f"></div>
+
+    <div style="display:flex;gap:0;align-items:flex-start;padding-bottom:40px">
+      <div style="min-width:72px;font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);padding-top:4px;letter-spacing:.06em">2013</div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--roz);margin-top:4px;margin-right:24px;flex-shrink:0;position:relative;z-index:1"></div>
+      <div><p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:5px">Założenie chóru</p><p style="font-size:13px;color:#555;line-height:1.7">Założycielką chóru jest <strong style="color:#fff">Anna Sobczak</strong>, ówczesna dyrektorka Domu Kultury Brwinów. Nazwę „Chór Wydartych Domom Kur" wymyśliła <strong style="color:#fff">Anna Żaczek-Siwczuk</strong>. Pierwszą dyrygentką zostaje Aleksandra Kopp — związana z Zespołem „Mazowsze".</p></div>
+    </div>
+
+    <div style="display:flex;gap:0;align-items:flex-start;padding-bottom:40px">
+      <div style="min-width:72px;font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);padding-top:4px;letter-spacing:.06em">2016</div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--roz);margin-top:4px;margin-right:24px;flex-shrink:0;position:relative;z-index:1"></div>
+      <div><p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:5px">Pierwsze nagrody ogólnopolskie</p><p style="font-size:13px;color:#555;line-height:1.7">Srebrne Pasmo w Chełmnie. Brązowe Pasmo w Rzeszowie i Goniądzu z nagrodą Dyrektora Parku Biebrzańskiego. Wyróżnienie w Pruszkowie.</p></div>
+    </div>
+
+    <div style="display:flex;gap:0;align-items:flex-start;padding-bottom:40px">
+      <div style="min-width:72px;font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);padding-top:4px"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#1f1f1f;border:1px solid #2a2a2a;margin-top:4px;margin-right:24px;flex-shrink:0;position:relative;z-index:1"></div>
+      <div><p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:5px">Michał Haber</p><p style="font-size:13px;color:#555;line-height:1.7">Wieloletni śpiewak i tancerz PZPiT, kierownik chórów w Brwinowie i Warszawie przejmuje prowadzenie.</p></div>
+    </div>
+
+    <div style="display:flex;gap:0;align-items:flex-start;padding-bottom:40px">
+      <div style="min-width:72px;font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);padding-top:4px;letter-spacing:.06em">2020</div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--roz);margin-top:4px;margin-right:24px;flex-shrink:0;position:relative;z-index:1"></div>
+      <div><p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:5px">Wilno</p><p style="font-size:13px;color:#555;line-height:1.7">Pierwszy zagraniczny koncert — kolędowy repertuar w barokowym Kościele Wniebowzięcia NMP w Wilnie.</p></div>
+    </div>
+
+    <div style="display:flex;gap:0;align-items:flex-start;padding-bottom:40px">
+      <div style="min-width:72px;font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);padding-top:4px"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#1f1f1f;border:1px solid #2a2a2a;margin-top:4px;margin-right:24px;flex-shrink:0;position:relative;z-index:1"></div>
+      <div><p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:5px">Artur Małecki</p><p style="font-size:13px;color:#555;line-height:1.7">Dyrygent Chóru Reprezentacyjnego Zespołu Artystycznego Wojska Polskiego obejmuje kierownictwo.</p></div>
+    </div>
+
+    <div style="display:flex;gap:0;align-items:flex-start;padding-bottom:40px">
+      <div style="min-width:72px;font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);padding-top:4px;letter-spacing:.06em">2024</div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--roz);margin-top:4px;margin-right:24px;flex-shrink:0;position:relative;z-index:1"></div>
+      <div><p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:5px">Warszawska Jesień</p><p style="font-size:13px;color:#555;line-height:1.7">Udział w spektaklu „Pieśni codzienności — nigunim". CHWDK wspiera akcję „Depresja? Nie!"</p></div>
+    </div>
+
+    <div style="display:flex;gap:0;align-items:flex-start">
+      <div style="min-width:72px;font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);padding-top:2px;letter-spacing:.06em">2026</div>
+      <div style="width:14px;height:14px;border-radius:50%;background:var(--roz);margin-top:2px;margin-right:22px;flex-shrink:0;position:relative;z-index:1;box-shadow:0 0 0 4px rgba(232,23,93,.2)"></div>
+      <div><p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:5px">Aleksandra Kopp wraca</p><p style="font-size:13px;color:#555;line-height:1.7">Aleksandra Kopp ponownie staje za pulpitem. Nowy rozdział CHWDK — z tym samym sercem i coraz wyższymi ambicjami.</p></div>
+    </div>
+
+    
+  </div>
+</section>
+
+<style>
+@media(max-width:768px){
+  #historia{padding:64px 24px!important}
+  #historia > div > div[style*="absolute"]{left:56px!important}
+  #historia > div > div > div:first-child{min-width:56px!important}
+}
+</style>
+
+<!-- GALERIA ROZSZERZONA -->
+<section class="gal-wrap gl-wrap" id="galeria">
+  <div class="gl-naglowek">
+    <p class="eyebrow" style="color:var(--por)">Galeria</p>
+    <h2 class="h2" style="color:#fff">„Hej, kie jo <em>se zaśpiewom”</em></h2>
+    <p class="gl-lead">Trasa z repertuarem zakopiańskim — wiosna i lato 2026.</p>
+  </div>
+
+  <div class="gl-rozdzial">
+    <p class="gl-etykieta"><b>Dni Piastowa</b><span>9 maja 2026</span></p>
+    <div class="gl-siatka">
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="0" data-duze="media/gal-p01-d.jpg" data-opis="Chór na scenie Dni Piastowa" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Chór na scenie Dni Piastowa"><img src="media/gal-p01.jpg" width="860" height="645" alt="Chór na scenie Dni Piastowa" loading="lazy" decoding="async"><span class="gl-podpis">Chór na scenie Dni Piastowa</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="1" data-duze="media/gal-p02-d.jpg" data-opis="Za kulisami, chwilę przed wyjściem na scenę" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Za kulisami, chwilę przed wyjściem na scenę"><img src="media/gal-p02.jpg" width="645" height="860" alt="Za kulisami, chwilę przed wyjściem na scenę" loading="lazy" decoding="async"><span class="gl-podpis">Za kulisami, chwilę przed wyjściem na scenę</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="2" data-duze="media/gal-p03-d.jpg" data-opis="Występ z zespołem" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Występ z zespołem"><img src="media/gal-p03.jpg" width="860" height="645" alt="Występ z zespołem" loading="lazy" decoding="async"><span class="gl-podpis">Występ z zespołem</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="3" data-duze="media/gal-p04-d.jpg" data-opis="Logo chóru na koszulach" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Logo chóru na koszulach"><img src="media/gal-p04.jpg" width="645" height="860" alt="Logo chóru na koszulach" loading="lazy" decoding="async"><span class="gl-podpis">Logo chóru na koszulach</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="4" data-duze="media/gal-p05-d.jpg" data-opis="Śpiew przy mikrofonach" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Śpiew przy mikrofonach"><img src="media/gal-p05.jpg" width="860" height="645" alt="Śpiew przy mikrofonach" loading="lazy" decoding="async"><span class="gl-podpis">Śpiew przy mikrofonach</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="5" data-duze="media/gal-p06-d.jpg" data-opis="Rozgrzewka w sali prób" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Rozgrzewka w sali prób"><img src="media/gal-p06.jpg" width="645" height="860" alt="Rozgrzewka w sali prób" loading="lazy" decoding="async"><span class="gl-podpis">Rozgrzewka w sali prób</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="6" data-duze="media/gal-p07-d.jpg" data-opis="Wieczorny koncert" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Wieczorny koncert"><img src="media/gal-p07.jpg" width="860" height="645" alt="Wieczorny koncert" loading="lazy" decoding="async"><span class="gl-podpis">Wieczorny koncert</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="7" data-duze="media/gal-p08-d.jpg" data-opis="Na scenie Miejskiego Ośrodka Kultury" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: Na scenie Miejskiego Ośrodka Kultury"><img src="media/gal-p08.jpg" width="645" height="860" alt="Na scenie Miejskiego Ośrodka Kultury" loading="lazy" decoding="async"><span class="gl-podpis">Na scenie Miejskiego Ośrodka Kultury</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="8" data-duze="media/gal-p09-d.jpg" data-opis="W drodze na scenę" data-miejsce="Dni Piastowa · maj 2026" aria-label="Powiększ: W drodze na scenę"><img src="media/gal-p09.jpg" width="645" height="860" alt="W drodze na scenę" loading="lazy" decoding="async"><span class="gl-podpis">W drodze na scenę</span></button></figure>
+    </div>
+  </div>
+
+  <div class="gl-rozdzial">
+    <p class="gl-etykieta"><b>Otwarte Ogrody</b><span>Milanówek · Podkowa Leśna · Brwinów · czerwiec 2026</span></p>
+    <div class="gl-siatka">
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="9" data-duze="media/gal-o01-d.jpg" data-opis="Śpiew w ogrodzie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Śpiew w ogrodzie"><img src="media/gal-o01.jpg" width="860" height="645" alt="Śpiew w ogrodzie" loading="lazy" decoding="async"><span class="gl-podpis">Śpiew w ogrodzie</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="10" data-duze="media/gal-o02-d.jpg" data-opis="Selfie w kręgu" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Selfie w kręgu"><img src="media/gal-o02.jpg" width="645" height="860" alt="Selfie w kręgu" loading="lazy" decoding="async"><span class="gl-podpis">Selfie w kręgu</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="11" data-duze="media/gal-o03-d.jpg" data-opis="Koncert pod batutą Aleksandry Kopp" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Koncert pod batutą Aleksandry Kopp"><img src="media/gal-o03.jpg" width="860" height="645" alt="Koncert pod batutą Aleksandry Kopp" loading="lazy" decoding="async"><span class="gl-podpis">Koncert pod batutą Aleksandry Kopp</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="12" data-duze="media/gal-o04-d.jpg" data-opis="Przerwa w oranżerii" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Przerwa w oranżerii"><img src="media/gal-o04.jpg" width="645" height="860" alt="Przerwa w oranżerii" loading="lazy" decoding="async"><span class="gl-podpis">Przerwa w oranżerii</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="13" data-duze="media/gal-o05-d.jpg" data-opis="Koncert dla publiczności w ogrodzie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Koncert dla publiczności w ogrodzie"><img src="media/gal-o05.jpg" width="860" height="573" alt="Koncert dla publiczności w ogrodzie" loading="lazy" decoding="async"><span class="gl-podpis">Koncert dla publiczności w ogrodzie</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="14" data-duze="media/gal-o06-d.jpg" data-opis="Chórzystki w oranżerii" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Chórzystki w oranżerii"><img src="media/gal-o06.jpg" width="645" height="860" alt="Chórzystki w oranżerii" loading="lazy" decoding="async"><span class="gl-podpis">Chórzystki w oranżerii</span></button></figure>
+      <figure class="gl-el"><button type="button" class="gl-btn" data-i="15" data-duze="media/gal-o07-d.jpg" data-opis="Chór w pełnym składzie na trawie" data-miejsce="Otwarte Ogrody · czerwiec 2026" aria-label="Powiększ: Chór w pełnym składzie na trawie"><img src="media/gal-o07.jpg" width="860" height="573" alt="Chór w pełnym składzie na trawie" loading="lazy" decoding="async"><span class="gl-podpis">Chór w pełnym składzie na trawie</span></button></figure>
+    </div>
+  </div>
+</section>
+
+<div class="gl-lb" id="gl-lb" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia" hidden>
+  <button type="button" class="gl-lb-x" aria-label="Zamknij">&times;</button>
+  <button type="button" class="gl-lb-nav gl-lb-prev" aria-label="Poprzednie zdjęcie">&#8249;</button>
+  <figure class="gl-lb-fig"><img alt=""><figcaption><b></b><span></span></figcaption></figure>
+  <button type="button" class="gl-lb-nav gl-lb-next" aria-label="Następne zdjęcie">&#8250;</button>
+  <p class="gl-lb-licz"></p>
+</div>
+
+<style>
+.gl-wrap{padding:108px clamp(24px,4.4vw,72px) 112px}
+.gl-naglowek{max-width:760px;margin-bottom:56px}
+.gl-lead{font-size:15px;line-height:1.75;color:rgba(255,255,255,.55);max-width:50ch}
+.gl-rozdzial+.gl-rozdzial{margin-top:72px}
+.gl-etykieta{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:22px;
+  padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.12)}
+.gl-etykieta b{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;color:#fff}
+.gl-etykieta span{font-family:'Syne',sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--por)}
+/* murowanka z kolumn: zdjecia w naturalnych proporcjach, nic nie jest przycinane */
+.gl-siatka{column-count:3;column-gap:16px}
+.gl-el{break-inside:avoid;margin:0 0 16px}
+.gl-btn{display:block;position:relative;width:100%;padding:0;border:0;background:#1a1a1a;
+  cursor:zoom-in;overflow:hidden;border-radius:2px;line-height:0}
+.gl-btn img{width:100%;height:auto;display:block;transition:transform .55s cubic-bezier(.22,.9,.3,1),filter .3s}
+.gl-btn:hover img,.gl-btn:focus-visible img{transform:scale(1.035);filter:brightness(.82)}
+.gl-btn:focus-visible{outline:2px solid var(--por);outline-offset:3px}
+.gl-podpis{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 14px;line-height:1.3;text-align:left;
+  font-family:'Cormorant Garamond',serif;font-size:17px;color:#fff;
+  background:linear-gradient(to top,rgba(0,0,0,.62),rgba(0,0,0,0));
+  opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s}
+.gl-btn:hover .gl-podpis,.gl-btn:focus-visible .gl-podpis{opacity:1;transform:none}
+/* podglad pelnoekranowy */
+.gl-lb{position:fixed;inset:0;z-index:500;background:rgba(10,8,7,.96);
+  display:flex;align-items:center;justify-content:center;padding:56px 80px 76px}
+.gl-lb[hidden]{display:none}
+.gl-lb-fig{margin:0;max-width:100%;max-height:100%;display:flex;flex-direction:column;align-items:center}
+.gl-lb-fig img{max-width:100%;max-height:calc(100vh - 170px);width:auto;height:auto;display:block;
+  object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.gl-lb-fig figcaption{margin-top:16px;text-align:center}
+.gl-lb-fig figcaption b{display:block;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:21px;color:#fff}
+.gl-lb-fig figcaption span{display:block;margin-top:4px;font-family:'Syne',sans-serif;font-size:9px;
+  font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--por)}
+.gl-lb-x,.gl-lb-nav{position:absolute;background:none;border:0;color:#fff;cursor:pointer;
+  font-family:'Cormorant Garamond',serif;line-height:1;opacity:.7;transition:opacity .2s}
+.gl-lb-x:hover,.gl-lb-nav:hover{opacity:1}
+.gl-lb-x{top:14px;right:22px;font-size:48px;padding:6px 10px}
+.gl-lb-nav{top:50%;transform:translateY(-50%);font-size:72px;padding:14px 18px}
+.gl-lb-prev{left:10px}.gl-lb-next{right:10px}
+.gl-lb-licz{position:absolute;bottom:22px;left:0;right:0;text-align:center;font-family:'Syne',sans-serif;
+  font-size:9.5px;font-weight:600;letter-spacing:.24em;color:rgba(255,255,255,.45)}
+@media(min-width:1400px){ .gl-siatka{column-count:4} }
+@media(max-width:1000px){ .gl-siatka{column-count:2} }
+@media(max-width:768px){
+  .gl-wrap{padding:64px 16px 72px}
+  .gl-naglowek{padding:0 8px;margin-bottom:36px}
+  .gl-etykieta{padding:0 8px 10px}
+  .gl-etykieta b{font-size:22px}
+  .gl-siatka{column-gap:10px}
+  .gl-el{margin-bottom:10px}
+  .gl-podpis{display:none}
+  .gl-lb{padding:52px 0 70px}
+  .gl-lb-nav{display:none}
+  .gl-lb-fig img{max-height:calc(100vh - 150px)}
+}
+@media(prefers-reduced-motion:reduce){ .gl-btn img,.gl-podpis{transition:none} }
+</style>
+
+<script>
+(function(){
+  var lb=document.getElementById('gl-lb'); if(!lb) return;
+  var btns=[].slice.call(document.querySelectorAll('.gl-btn'));
+  var img=lb.querySelector('img'), tyt=lb.querySelector('figcaption b'), gdzie=lb.querySelector('figcaption span'),
+      licz=lb.querySelector('.gl-lb-licz'), zamknij=lb.querySelector('.gl-lb-x');
+  var obecny=0, powrot=null;
+  function pokaz(i){
+    obecny=(i+btns.length)%btns.length;
+    var b=btns[obecny];
+    img.src=b.dataset.duze; img.alt=b.dataset.opis;
+    tyt.textContent=b.dataset.opis; gdzie.textContent=b.dataset.miejsce;
+    licz.textContent=(obecny+1)+' / '+btns.length;
+    // wczytaj z wyprzedzeniem sasiednie zdjecie
+    var nast=btns[(obecny+1)%btns.length]; (new Image()).src=nast.dataset.duze;
+  }
+  function otworz(i){ powrot=document.activeElement; pokaz(i); lb.hidden=false;
+    document.body.style.overflow='hidden'; zamknij.focus(); }
+  function zamk(){ lb.hidden=true; document.body.style.overflow=''; img.src=''; if(powrot) powrot.focus(); }
+  btns.forEach(function(b,i){ b.addEventListener('click',function(){ otworz(i); }); });
+  zamknij.addEventListener('click',zamk);
+  lb.querySelector('.gl-lb-prev').addEventListener('click',function(){ pokaz(obecny-1); });
+  lb.querySelector('.gl-lb-next').addEventListener('click',function(){ pokaz(obecny+1); });
+  lb.addEventListener('click',function(e){ if(e.target===lb) zamk(); });
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden) return;
+    if(e.key==='Escape') zamk();
+    else if(e.key==='ArrowRight') pokaz(obecny+1);
+    else if(e.key==='ArrowLeft') pokaz(obecny-1);
+  });
+  var x0=null;
+  lb.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; },{passive:true});
+  lb.addEventListener('touchend',function(e){
+    if(x0===null) return; var dx=e.changedTouches[0].clientX-x0; x0=null;
+    if(Math.abs(dx)>45) pokaz(obecny+(dx<0?1:-1));
+  });
+})();
+</script>
+
+<!-- REPERTUAR -->
+<section class="rep-wrap" id="repertuar">
+  <p class="eyebrow">Repertuar</p>
+  <h2 class="h2">Co śpiewamy</h2>
+  <div class="rep-grid">
+    <div class="rep-item"><div class="rep-nr">01</div><div class="rep-name">Muzyka ludowa</div><div class="rep-desc">Pieśni z polskiej tradycji — od regionów po muzykę słowiańską. Brzmiące współcześnie, głęboko osadzone.</div></div>
+    <div class="rep-item"><div class="rep-nr">02</div><div class="rep-name">Piosenki warszawskie</div><div class="rep-desc">Klimat przedwojennej Warszawy, tęsknota i serce. Repertuar bliski Mazowszu.</div></div>
+    <div class="rep-item"><div class="rep-nr">03</div><div class="rep-name">Musical i film</div><div class="rep-desc">Wielkie melodie w chóralnych aranżacjach — repertuar, który publiczność pamięta.</div></div>
+    <div class="rep-item"><div class="rep-nr">04</div><div class="rep-name">Kolędy i pastorałki</div><div class="rep-desc">Wielokrotnie nagradzany repertuar świąteczny — od tradycyjnych po rzadziej śpiewane perły.</div></div>
+    <div class="rep-item"><div class="rep-nr">05</div><div class="rep-name">Muzyka współczesna</div><div class="rep-desc">Spektakl na Warszawskiej Jesieni. Otwarci na nowe języki muzyczne.</div></div>
+    <div class="rep-item"><div class="rep-nr">06</div><div class="rep-name">Pieśni patriotyczne</div><div class="rep-desc">Śpiewane z powagą — ważna część tożsamości chóru i polskiego dziedzictwa.</div></div>
+  </div>
+</section>
+
+<!-- ENGLISH -->
+<section class="en-wrap" id="english">
+  <div class="en-grid">
+    <div>
+      <p class="eyebrow">For international partners</p>
+      <h2 class="h2">CHWDK in <em>English</em></h2>
+      <div class="body-txt">
+        <p>The <strong style="color:var(--dark);font-weight:500">Chór Wydartych Domom Kur</strong> (Women's Choir of Mazovia) was founded in 2013 in Brwinów, near Warsaw. Our name translates as <em>„The Choir of Women Who Stole Time from Home"</em> — women who are not professional musicians, but who sing out of pure love for music.</p>
+        <p>Over more than a decade, we have won awards at national and international competitions, performed in <strong style="color:var(--dark);font-weight:500">Vilnius</strong> (2020) and taken part in the prestigious <strong style="color:var(--dark);font-weight:500">Warsaw Autumn</strong> contemporary music festival (2024).</p>
+        <p>The choir was founded by <strong style="color:var(--dark);font-weight:500">Anna Sobczak</strong>, at the time director of the Brwinów Culture Centre. We are currently led by <strong style="color:var(--dark);font-weight:500">Aleksandra Kopp</strong> — conductor at the State Folk Song and Dance Ensemble „Mazowsze", and the vocal coach who prepared Joanna Kulig for her acclaimed performance in Paweł Pawlikowski's <em>Cold War</em>.</p>
+      </div>
+    </div>
+    <div>
+      <div style="border-top:1px solid rgba(0,0,0,.1);margin-bottom:28px">
+        <div style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.07)"><span style="font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);min-width:36px;padding-top:2px">2024</span><span style="font-size:13px;color:var(--dark);line-height:1.6">Participant · <em>Warsaw Autumn</em> international festival</span></div>
+        <div style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.07)"><span style="font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);min-width:36px;padding-top:2px">2020</span><span style="font-size:13px;color:var(--dark);line-height:1.6">Concert · Church of the Assumption of the Virgin Mary, Vilnius</span></div>
+        <div style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.07)"><span style="font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);min-width:36px;padding-top:2px">2016</span><span style="font-size:13px;color:var(--dark);line-height:1.6">Silver Award · National Carol Competition, Chełmno</span></div>
+        <div style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.07)"><span style="font-family:Syne,sans-serif;font-size:10px;font-weight:700;color:var(--roz);min-width:36px;padding-top:2px"></span><span style="font-size:13px;color:var(--dark);line-height:1.6">Bronze Awards · Rzeszów &amp; Goniądz + special award</span></div>
+      </div>
+      <div class="en-cta">
+        <p class="lead">Interested in collaboration?</p>
+        <p class="sub">We welcome invitations to choral festivals, cultural exchanges, and joint projects with choirs from Poland and abroad.</p>
+        <a href="#zaproszenia" class="btn-fill">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARZ -->
+<section class="form-wrap" id="zaproszenia">
+  <div class="form-grid">
+    <div class="form-info">
+      <p class="eyebrow" style="color:var(--por)">Zaproś nas</p>
+      <h2 class="h2">Zaproszenia<br>i <em>współpraca</em></h2>
+      <p class="form-opis">Chętnie śpiewamy na festiwalach, w ogrodach, kościołach i wszędzie tam, gdzie brzmi muzyka.</p>
+      <div class="form-lista">
+        <div class="form-punkt"><div class="form-punkt-t"><strong>Festiwale chóralne</strong>Konkursy i przeglądy w Polsce i za granicą</div></div>
+        <div class="form-punkt"><div class="form-punkt-t"><strong>Koncerty kameralne</strong>Salony, ogrody, wille — intymny repertuar</div></div>
+        <div class="form-punkt"><div class="form-punkt-t"><strong>Uroczystości</strong>Muzyka sakralna, patriotyczna, okolicznościowa</div></div>
+        <div class="form-punkt"><div class="form-punkt-t"><strong>Współpraca z chórami</strong>Wymiany, wspólne projekty</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="formularz">
+        <p class="formularz-tytul">Napisz do nas</p>
+        <p class="formularz-sub">Odpiszemy w ciągu 48 godzin.</p>
+        <form id="form-zap" name="kontakt" method="POST" action="/"
+                data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="form-name" value="kontakt">
+          <p hidden><label>Nie wypełniaj: <input name="bot-field"></label></p>
+          <input type="hidden" name="temat" value="Zaproszenie / Współpraca">
+          <div class="cel-wybor" role="radiogroup" aria-label="W jakiej sprawie piszesz">
+            <label class="cel-opcja"><input type="radio" name="cel" value="Zapraszam chór" checked><span>Zapraszam chór</span></label>
+            <label class="cel-opcja"><input type="radio" name="cel" value="Chcę śpiewać"><span>Chcę śpiewać z wami</span></label>
+          </div>
+          <p class="cel-info tylko-dolaczenie">Próby w każdy poniedziałek w OKej Brwinów. Nie trzeba znać nut ani mieć doświadczenia — wystarczy chęć śpiewania.</p>
+          <div class="pole-row">
+            <div class="pole"><label>Imię i nazwisko *</label><input type="text" name="imie" placeholder="Anna Kowalska" required></div>
+            <div class="pole tylko-zaproszenie"><label>Organizacja</label><input type="text" name="org" placeholder="Festiwal / Chór"></div>
+          </div>
+          <div class="pole-row">
+            <div class="pole"><label>E-mail *</label><input type="email" name="email" placeholder="anna@festiwal.pl" required></div>
+            <div class="pole"><label>Telefon</label><input type="tel" name="tel" placeholder="+48 000 000 000"></div>
+          </div>
+          <div class="pole tylko-zaproszenie">
+            <label>Rodzaj współpracy</label>
+            <select name="rodzaj">
+              <option value="">— wybierz —</option>
+              <option>Festiwal chóralny</option>
+              <option>Koncert kameralny</option>
+              <option>Uroczystość / wydarzenie</option>
+              <option>Współpraca z chórem</option>
+              <option>Projekt artystyczny</option>
+              <option>Inne</option>
+            </select>
+          </div>
+          <div class="pole-row tylko-zaproszenie">
+            <div class="pole"><label>Proponowana data</label><input type="text" name="data" placeholder="np. czerwiec 2027"></div>
+            <div class="pole"><label>Miejsce</label><input type="text" name="miejsce" placeholder="np. Kraków"></div>
+          </div>
+          <div class="pole tylko-dolaczenie">
+            <label>Twój głos — jeśli wiesz</label>
+            <select name="glos">
+              <option value="">— nie wiem, sprawdzimy razem —</option>
+              <option>Sopran</option>
+              <option>Mezzosopran</option>
+              <option>Alt</option>
+            </select>
+          </div>
+          <div class="pole"><label>Wiadomość *</label><textarea name="msg" placeholder="Opowiedz nam więcej..." required></textarea></div>
+          <button type="submit" class="btn-wyslij">Wyślij zaproszenie</button>
+        </form>
+        <div class="form-success" id="fs">
+          <div class="form-success-i">🐓</div>
+          <div class="form-success-t">Dziękujemy za zaproszenie!</div>
+          <div class="form-success-s">Odezwiemy się w ciągu 48 godzin.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STOPKA -->
+<footer>
+  <span class="foot-logo">CHWDK<em>.</em></span>
+  <span class="foot-copy">© <span id="rok">2026</span> Chór Wydartych Domom Kur · Brwinów</span>
+  <div class="foot-links">
+    <a href="https://www.instagram.com/chorkur/" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/CHWDK.chorwydartychdomomkur/" target="_blank">Facebook</a>
+    <a href="https://chortownia.org" target="_blank">Chórtownia</a>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  const m=document.getElementById('nav-mobile');
+  const b=document.getElementById('burger');
+  const open=m.classList.toggle('open');
+  b.querySelectorAll('span')[0].style.transform=open?'rotate(45deg) translate(5px,5px)':'';
+  b.querySelectorAll('span')[1].style.opacity=open?'0':'1';
+  b.querySelectorAll('span')[2].style.transform=open?'rotate(-45deg) translate(5px,-5px)':'';
+  document.body.style.overflow=open?'hidden':'';
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    if(document.getElementById('nav-mobile').classList.contains('open')) toggleMenu();
+  }
+});
+
+(function(){
+  var f=document.getElementById('form-zap'); if(!f) return;
+  function odswiez(){
+    var dolaczam=f.querySelector('input[name="cel"]:checked').value!=='Zapraszam chór';
+    f.dataset.cel = dolaczam ? 'dolaczam' : 'zapraszam';
+    f.querySelector('.btn-wyslij').textContent = dolaczam ? 'Wyślij zgłoszenie' : 'Wyślij zaproszenie';
+    f.querySelector('input[name="temat"]').value = dolaczam
+      ? 'Chcę śpiewać w CHWDK'
+      : 'Zaproszenie / Współpraca';
+  }
+  [].forEach.call(f.querySelectorAll('input[name="cel"]'),function(r){r.addEventListener('change',odswiez);});
+  odswiez();
+})();
+
+async function handleSubmit(e){
+  e.preventDefault();
+  const form=e.target, btn=form.querySelector('.btn-wyslij');
+  btn.textContent='Wysyłanie...'; btn.disabled=true;
+  try{
+    const dane=new URLSearchParams(new FormData(form)).toString();
+    const res=await fetch('/',{method:'POST',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'},body:dane});
+    if(res.ok){form.style.display='none';document.getElementById('fs').style.display='block';}
+    else{btn.textContent='Błąd — spróbuj ponownie';btn.disabled=false;}
+  }catch{btn.textContent='Błąd — spróbuj ponownie';btn.disabled=false;}
+}
+</script>
+<script>document.getElementById("rok").textContent=new Date().getFullYear();</script>
+
+<style>
+/* ================= SYSTEM PROPORCJI — jedno zrodlo prawdy dla calej strony =================
+   kontener 1240, margines boczny 24–72, dwa poziomy odstepu sekcji, miara tekstu 64 znaki */
+:root{
+  --gutter:clamp(24px,5vw,72px);
+  --kontener:1240px;
+  --bok:max(var(--gutter), calc((100% - var(--kontener)) / 2));
+  --sek:clamp(64px,8vw,112px);
+  --sek-s:clamp(52px,6vw,84px);
+  --miara:64ch;
+}
+/* wspolny kontener */
+.manifest,.pos-wrap,.aktual-wrap,.rep-wrap,.en-wrap,.form-wrap,#historia{
+  padding-left:var(--bok)!important;padding-right:var(--bok)!important}
+@media(min-width:769px){ .gl-wrap{padding-left:var(--bok)!important;padding-right:var(--bok)!important} }
+footer{padding-left:var(--bok)!important;padding-right:var(--bok)!important}
+/* rytm pionowy: sekcje glowne i ciche */
+.manifest,.pos-wrap,.aktual-wrap,.form-wrap,.gl-wrap,#historia,#grzeda{
+  padding-top:var(--sek)!important;padding-bottom:var(--sek)!important}
+.rep-wrap,.en-wrap{padding-top:var(--sek-s)!important;padding-bottom:var(--sek-s)!important}
+.dyr-tekst{padding-top:var(--sek);padding-bottom:var(--sek)}
+/* miara tekstu — wiersze 45–75 znakow */
+.aktual-wrap p,#historia p,.en-wrap .body-txt p,.form-opis,.onas-tekst .body-txt p,
+.dyr-tekst .body-txt p,.pos-lead,.grz-lead,.gl-lead,.manifest-txt{max-width:var(--miara)}
+/* czytelnosc: tekst ciagly nie mniejszy niz 15 px */
+#historia p[style*="font-size:13px"]{font-size:15px!important;line-height:1.72!important}
+.onas-tekst span[style*="font-size:13px"]{font-size:15px!important;line-height:1.6}
+.os-txt{font-size:15px;line-height:1.6}
+.rep-desc{font-size:14.5px;line-height:1.7}
+/* male etykiety wersalikami: minimum 10.5 px */
+.eyebrow{font-size:11px}
+.grz-hint{font-size:10.5px}
+.pos-podpis-duzy span,.pos-mala figcaption span,.gl-etykieta span{font-size:10.5px}
+.dyr-tag{font-size:10px}
+.manifest-meta{font-size:11px}
+/* cele dotyku: minimum 44–48 px */
+.btn-fill,.btn-out{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+.pole input,.pole select{min-height:48px}
+.pole textarea{min-height:120px}
+.foot-links a{padding:15px 6px!important}
+.pos-kanal{padding-top:14px}
+.logo{min-height:44px}
+@media(max-width:768px){
+  .dyr-tekst .body-txt p{font-size:15px!important;line-height:1.7!important}
+  .body-txt p{font-size:15.5px;line-height:1.72}
+}
+</style>
+
+<!-- DOPRACOWANIE SEKCJI -->
+<style>
+/* Posłuchaj — zwarta lista rowna wysokosci odtwarzacza */
+.pos-poz{grid-template-columns:100px 1fr;gap:14px;padding:5px 8px 5px 6px}
+.pos-poz-txt b{font-size:17.5px}
+.pos-poz-txt span{font-size:9.5px;margin-top:3px}
+.pos-etykieta{margin-bottom:6px;padding-bottom:10px}
+@media(max-width:768px){ .pos-poz{grid-template-columns:96px 1fr;padding:5px 6px} .pos-poz-txt b{font-size:17px} }
+
+/* Dyrygentka i O nas — szersze zdjecie, tekst bez pustego pola z prawej */
+@media(min-width:769px){
+  .dyr-grid{grid-template-columns:clamp(360px,38vw,600px) minmax(0,1fr)}
+  .dyr-tekst{padding-left:clamp(40px,5vw,80px);padding-right:max(var(--gutter),calc((100vw - var(--kontener)) / 2))}
+  .onas-tekst{padding-left:max(var(--gutter),calc((100vw - var(--kontener)) / 2))!important;padding-right:clamp(40px,5vw,80px)!important;
+    padding-top:var(--sek)!important;padding-bottom:var(--sek)!important}
+}
+
+/* Kalendarium — naglowek w lewej kolumnie (przyklejony), os czasu w prawej */
+@media(min-width:1000px){
+  #historia{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);column-gap:56px;align-items:start}
+  #historia .hist-nag{position:sticky;top:120px}
+  #historia .hist-nag .h2{margin-bottom:0!important}
+}
+#historia > div > div[style*="absolute"]{background:#2c2c2c!important}
+#historia p[style*="color:#555"]{color:#a3a3a3!important}
+#historia div[style*="background:#1f1f1f;border"]{background:#0f0f0f!important;border-color:#5a5a5a!important}
+
+/* Galeria — rowne rzedy (jak w Google Photos), bez dziur */
+.gl-siatka.gl-rzedy{column-count:auto!important;display:flex;flex-wrap:wrap;gap:var(--gl-gap,12px)}
+.gl-rzedy .gl-el{margin:0!important;flex:none;break-inside:auto}
+.gl-rzedy .gl-btn{height:100%}
+.gl-rzedy .gl-btn img{height:100%;object-fit:cover}
+
+/* EN — czytelny opis w czarnej karcie */
+.en-cta p.sub{color:#a3a3a3}
+/* przyciski i linki — wygodne do tapniecia */
+.btn-wyslij{min-height:48px}
+.foot-links a{min-height:44px;display:inline-flex;align-items:center}
+/* lata na osi czasu odrobine wieksze */
+#historia div[style*="font-size:10px"]{font-size:11px!important}
+
+@media(max-width:768px){
+  /* Repertuar — zwarta lista zamiast wysokich kart */
+  .rep-grid{grid-template-columns:1fr!important;border-left:0;margin-top:28px}
+  .rep-item{display:grid;grid-template-columns:48px 1fr;column-gap:14px;padding:20px 0 22px;border-right:0}
+  .rep-nr{grid-row:1 / span 2;font-size:30px;margin:0;padding-top:2px}
+  .rep-name{margin-bottom:4px}
+  /* Kalendarium — wezsza kolumna lat, wiecej miejsca na tekst */
+  #historia > div > div[style*="absolute"]{left:48px!important}
+  #historia > div > div > div:first-child{min-width:44px!important}
+  #historia > div > div > div[style*="border-radius:50%"]{margin-right:14px!important}
+  #historia > div > div[style*="padding-bottom:40px"]{padding-bottom:30px!important}
+}
+/* Formularz — czytelne etykiety i podpowiedzi na czarnym tle */
+.pole label{color:#9a9a9a}
+.pole input::placeholder,.pole textarea::placeholder{color:#6e6e6e}
+.pole input,.pole select,.pole textarea{border-color:#2e2e2e}
+</style>
+<script>
+/* galeria: rowne rzedy — podzial liniowy, kazdy rzad dokladnie na szerokosc */
+(function(){
+  var siatki=[].slice.call(document.querySelectorAll('.gl-siatka')); if(!siatki.length) return;
+  function podziel(a,k){
+    var n=a.length; if(k>=n) return a.map(function(x){return [x];});
+    var pre=[0]; a.forEach(function(x,i){pre.push(pre[i]+x);});
+    var T=[],D=[],i,j,x;
+    for(i=0;i<=n;i++){T.push([]);D.push([]);}
+    for(i=1;i<=n;i++) T[i][1]=pre[i];
+    for(j=2;j<=k;j++) for(i=j;i<=n;i++){
+      var best=Infinity,bx=0;
+      for(x=j-1;x<i;x++){ var c=Math.max(T[x][j-1],pre[i]-pre[x]); if(c<best){best=c;bx=x;} }
+      T[i][j]=best; D[i][j]=bx;
+    }
+    var out=[],e=n; for(j=k;j>=1;j--){ var st=(j===1)?0:D[e][j]; out.unshift(a.slice(st,e)); e=st; }
+    return out;
+  }
+  function uloz(sw){
+    var el=[].slice.call(sw.querySelectorAll('.gl-el')); if(!el.length) return;
+    sw.classList.add('gl-rzedy');
+    var W=sw.clientWidth, gap=W<600?6:12; sw.style.setProperty('--gl-gap',gap+'px');
+    var H=W<600?150:(W<1000?210:280);
+    var ar=el.map(function(f){var im=f.querySelector('img');return (+im.getAttribute('width')||4)/(+im.getAttribute('height')||3);});
+    var suma=ar.reduce(function(a,b){return a+b;},0);
+    var k=Math.max(1,Math.round(suma*H/W));
+    var p=0;
+    podziel(ar,k).forEach(function(r){
+      var s=r.reduce(function(a,b){return a+b;},0), dost=W-gap*(r.length-1), h=dost/s, zaj=0;
+      r.forEach(function(x,j){
+        var f=el[p++], w=(j===r.length-1)?(dost-zaj):Math.floor(x*h);
+        zaj+=w; f.style.width=w+'px'; f.style.height=Math.round(h)+'px';
+      });
+    });
+  }
+  function wszystko(){ siatki.forEach(uloz); }
+  wszystko();
+  var ost=innerWidth,t=0;
+  addEventListener('resize',function(){ if(innerWidth===ost) return; clearTimeout(t); t=setTimeout(function(){ost=innerWidth;wszystko();},120); },{passive:true});
+  addEventListener('load',wszystko);
+})();
+/* typografia: pojedyncze litery (a, i, o, u, w, z) nie zostaja na koncu linii */
+(function(){
+  var re=/(^|[\s(„])([aiouwzAIOUWZ])\s+/g;
+  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+    var t=n.parentNode&&n.parentNode.nodeName; return /SCRIPT|STYLE|TEXTAREA|OPTION|svg|SVG/.test(t)?2:1;}});
+  var n; while(n=w.nextNode()){ if(/(^|\s)[aiouwzAIOUWZ]\s/.test(n.nodeValue)) n.nodeValue=n.nodeValue.replace(re,'$1$2\u00a0').replace(re,'$1$2\u00a0'); }
+})();
+</script>
+</body>
+</html>

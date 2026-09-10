@@ -1,0 +1,11 @@
+# Strona jest zwykłym plikiem HTML — Netlify nic nie buduje, tylko publikuje ten folder.
+[build]
+  publish = "."
+  command = ""
+
+# przewodnik dla edytujących nie musi być publicznie dostępny
+[[redirects]]
+  from = "/JAK-EDYTOWAC.md"
+  to = "/"
+  status = 301
+  force = true
