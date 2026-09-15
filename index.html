@@ -687,6 +687,35 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
   .grz-rzad{margin-bottom:4px}
   .grz-tor{padding-bottom:42px}
 }
+
+/* ===== kury z twarzami w jajach ===== */
+.kura-papier{display:none}
+.kura-jajo,.kura.bez-foto .kura-jajo{position:absolute;left:50%;bottom:calc(var(--nogi) - 3px);width:var(--pw);height:var(--ph);
+  margin-left:calc(var(--pw) / -2);z-index:3;overflow:hidden;isolation:isolate;
+  border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;
+  background:color-mix(in srgb,var(--kolor) 18%,#fbf8f2);
+  box-shadow:0 10px 22px -16px color-mix(in srgb,var(--kolor) 80%,#000)}
+.kura-jajo::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--kolor) 45%,transparent);transition:box-shadow .3s}
+.kura:hover .kura-jajo::after,.kura:focus .kura-jajo::after{box-shadow:inset 0 0 0 2.5px var(--kolor)}
+.kura-jajo img{position:absolute;max-width:none;height:auto;display:block;filter:saturate(.92) contrast(1.03)}
+.kura-inicjaly{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-size:calc(var(--pw) * .3);color:var(--kolor)}
+/* grzebien na czubku jaja */
+.kura-grzebien,.kura.bez-foto .kura-grzebien{bottom:calc(var(--nogi) - 3px + var(--ph) - 5px);margin-left:calc(var(--gw) / -2)}
+/* skrzydla przy bokach jaja, machaja */
+.kura-skrzydlo,.kura.bez-foto .kura-skrzydlo{bottom:auto;
+  top:calc(var(--h) - var(--nogi) + 3px - var(--ph) + var(--ph) * var(--sy));
+  animation:kuraMach var(--tm,3s) ease-in-out var(--dl,0s) infinite}
+.kura-skrzydlo.s-lewe{--kier:-1;margin-left:calc(var(--pw) / -2 - var(--sw) - 4px)}
+.kura-skrzydlo.s-prawe{--kier:1;margin-left:calc(var(--pw) / 2 + 4px)}
+@keyframes kuraMach{0%,62%,100%{transform:rotate(0)}70%{transform:rotate(calc(var(--kier) * 16deg))}78%{transform:rotate(calc(var(--kier) * 2deg))}86%{transform:rotate(calc(var(--kier) * 13deg))}}
+.kura:hover .kura-skrzydlo,.kura:focus .kura-skrzydlo{animation:kuraMachSzybko .42s ease-in-out infinite}
+@keyframes kuraMachSzybko{0%,100%{transform:rotate(calc(var(--kier) * 3deg))}50%{transform:rotate(calc(var(--kier) * 20deg))}}
+/* naczelna kura */
+.grz-szefowa .kura-jajo{box-shadow:0 0 0 4px #fff,0 0 0 5.5px var(--roz),0 14px 26px -16px var(--roz)}
+.dyr-batuta{bottom:calc(var(--nogi) + var(--ph) * .5)}
+@media(prefers-reduced-motion:reduce){ .kura-skrzydlo,.kura:hover .kura-skrzydlo{animation:none} }
 </style>
 
 <script>
@@ -762,7 +791,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
     var srodek = prawe
       ? '<g transform="translate(30,0) scale(-1,1)"><path d="'+d+'"/></g>'   // lustro WEWNATRZ svg
       : '<path d="'+d+'"/>';
-    return '<svg class="kura-skrzydlo '+(prawe?'s-prawe':'s-lewe')+'" viewBox="0 0 30 40" aria-hidden="true">'+srodek+'</svg>';
+    return '<svg class="kura-skrzydlo '+(prawe?'s-prawe':'s-lewe')+'" style="--dl:-'+((i*0.73+o.kolor*0.41)%3).toFixed(2)+'s;--tm:'+(2.6+(i%3)*0.45).toFixed(2)+'s" viewBox="0 0 30 40" aria-hidden="true">'+srodek+'</svg>';
   }
   function grzebien(o){
     var pula=GRZEBIENIE.filter(function(c){return c!==KOLORY[o.glos];});
@@ -788,7 +817,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
     st.setProperty('--bh', Math.round(ph*0.56)+'px');
     st.setProperty('--ba', (o.foto?0.44:0.6));
     st.setProperty('--gora', Math.round(16*k)+'px');
-    st.setProperty('--h', (ph+nogiH+Math.round(56*k))+'px');
+    st.setProperty('--h', (ph+nogiH+Math.round(30*k))+'px');
     // miejsce na skrzydlo tylko po tej stronie, gdzie ono jest — bez pustego boku
     var prawe=(i%2)===1, skrz=sw+6, j=1+((i*29)%3);
     st.setProperty('--w', (pw+8)+'px');
@@ -800,11 +829,11 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
   function ustawSzef(f,pw0){
     var pw=Math.round(pw0*1.16), k=pw/150;
     ustaw(f,f._o,1,pw);
-    var ph=Math.round(pw*1.193), nog=Math.round(44*k);
+    var ph=Math.round(pw*1.24), nog=Math.round(44*k);
     f.style.setProperty('--ph',ph+'px');
     f.style.setProperty('--nogi',nog+'px');
     f.style.setProperty('--gora',Math.round(18*k)+'px');
-    f.style.setProperty('--h',(ph+nog+Math.round(58*k))+'px');
+    f.style.setProperty('--h',(ph+nog+Math.round(34*k))+'px');
     f.style.setProperty('--gw',Math.round(pw*0.413)+'px');
     f.style.setProperty('--ml','0px'); f.style.setProperty('--mr','0px');
     f.style.setProperty('--w','auto');
@@ -817,6 +846,17 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
     return Math.min(120,pw);
   }
 
+  // twarz w jaju: glowa zawsze ~6% od gory, zdjecie siega dna jaja
+  function kadr(foto){
+    var m=/c-([a-z]+)\.png/.exec(foto||''), g=(m&&GLOWY[m[1]])||[0.05,0.5];
+    var PROP=380/319, JAJO=1.24;
+    var sk=Math.max(1.04, 0.95*JAJO/(PROP*(1-g[0]))), wys=sk*PROP;
+    return 'width:'+(sk*100).toFixed(2)+'%;left:'+(50-g[1]*sk*100).toFixed(2)+'%;top:'+((0.06*JAJO-g[0]*wys)/JAJO*100).toFixed(2)+'%';
+  }
+  function inicjaly(imie){
+    return imie.replace(/\./g,'').split(/\s+/).map(function(x){return x.charAt(0);}).join('').slice(0,2);
+  }
+
   function kura(o,i,glosNazwa){
     var f=document.createElement('figure');
     f.className='kura'+(o.foto?'':' bez-foto'); f.tabIndex=0;
@@ -826,7 +866,7 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
     st.setProperty('--skala', (0.97+((o.kolor*7+i)%4)*0.021).toFixed(3));
     st.setProperty('--kolor', KOLORY[o.glos]);
     st.setProperty('--ksztalt', KS[(i+o.kolor)%KS.length]);
-    var klucz=(o.foto||'').replace('c-','').replace('.png','');
+    var klucz=((/c-([a-z]+)\.png/.exec(o.foto||''))||[])[1]||'';
     var gm=GLOWY[klucz]||[0.06,0.5];
     st.setProperty('--gtop', gm[0]);
     st.setProperty('--gcx', gm[1]);
@@ -834,9 +874,9 @@ footer{background:#000;padding:28px 64px;display:flex;align-items:center;justify
 
 
     var portret = o.foto
-      ? '<span class="kura-portret"><img src="'+o.foto+'" alt="'+o.imie+'" loading="lazy" decoding="async"></span>'
-      : '<span class="kura-portret pusta" role="img" aria-label="'+o.imie+' — zdjęcie wkrótce"></span>';
-    f.innerHTML='<div class="kura-fig">'+(wariant==='a'?ogon(i):'')+'<span class="kura-papier"></span>'+portret
+      ? '<span class="kura-jajo"><img src="'+o.foto+'" alt="'+o.imie+'" loading="lazy" decoding="async" style="'+kadr(o.foto)+'"></span>'
+      : '<span class="kura-jajo" role="img" aria-label="'+o.imie+' — zdjęcie wkrótce"><span class="kura-inicjaly" aria-hidden="true">'+inicjaly(o.imie)+'</span></span>';
+    f.innerHTML='<div class="kura-fig">'+(wariant==='a'?ogon(i):'')+portret
       +grzebien(o)+skrzydlo(o,i)+nogi(o,i)+'</div>'
       +'<figcaption><b>'+o.imie+'</b><i>'+glosNazwa+'</i></figcaption>';
     return f;
