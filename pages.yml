@@ -1,0 +1,226 @@
+# Konfiguracja panelu Pages CMS dla strony Chóru Wydartych Domom Kur.
+# Po zapisaniu zmiany w panelu automat przebuduje index.html, a Netlify opublikuje stronę.
+media:
+  input: .
+  output: /
+
+content:
+  - name: koncerty
+    label: Kalendarz koncertów
+    type: file
+    path: tresc-koncerty.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Napis nad tytułem, type: string }
+      - { name: tytul, label: Tytuł sekcji, type: string, description: "Można użyć <br> i <em>kursywy</em>" }
+      - { name: foto_plakat, label: Plakat, type: image }
+      - { name: stopka, label: Dopisek pod listą, type: string }
+      - name: lata
+        label: Lata
+        type: object
+        list: true
+        fields:
+          - { name: rok, label: Rok, type: string }
+          - name: koncerty
+            label: Koncerty
+            type: object
+            list: true
+            fields:
+              - { name: kiedy, label: Kiedy, type: string, description: "np. 20.09. albo wiosna" }
+              - { name: opis, label: Gdzie i co, type: string, description: "Zacznij od spacji i kropki, np. ' · Milanówek, Festiwal Sploty'" }
+
+  - name: chor
+    label: Skład chóru
+    type: file
+    path: tresc-chor.json
+    format: json
+    fields:
+      - name: dyrygentka
+        label: Dyrygentka
+        type: object
+        fields:
+          - { name: imie, label: Imię i nazwisko, type: string }
+          - { name: rola, label: Rola, type: string }
+          - { name: foto, label: Zdjęcie, type: image }
+      - name: chor
+        label: Chórzystki
+        type: object
+        list: true
+        fields:
+          - { name: imie, label: Imię, type: string }
+          - name: glos
+            label: Głos
+            type: select
+            options:
+              values: [sopran, mezzosopran, alt]
+          - { name: foto, label: Zdjęcie, type: image, required: false, description: "Zostaw puste, jeśli nie ma zdjęcia — pokaże się jajo z inicjałami" }
+          - { name: rot, label: Przechył, type: number, hidden: true }
+          - { name: dy, label: Przesunięcie, type: number, hidden: true }
+          - { name: kolor, label: Wariant koloru, type: number, hidden: true }
+          - { name: grzebien, label: Grzebień, type: number, hidden: true }
+          - { name: odbicie, label: Odbicie, type: number, hidden: true }
+          - { name: skrzydlo, label: Skrzydło, type: number, hidden: true }
+
+  - name: galeria
+    label: Galeria zdjęć
+    type: file
+    path: tresc-galeria.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Napis nad tytułem, type: string }
+      - { name: tytul, label: Tytuł sekcji, type: string }
+      - { name: lead, label: Zdanie pod tytułem, type: text }
+      - name: albumy
+        label: Albumy
+        type: object
+        list: true
+        fields:
+          - { name: tytul, label: Tytuł albumu, type: string }
+          - { name: podtytul, label: Miejsce i data, type: string }
+          - name: zdjecia
+            label: Zdjęcia
+            type: object
+            list: true
+            fields:
+              - { name: maly, label: Miniatura, type: image, description: "Zdjęcie 860 px" }
+              - { name: duzy, label: Wersja do powiększenia, type: image, description: "To samo zdjęcie 1600 px" }
+              - { name: opis, label: Podpis, type: string }
+              - { name: miejsce, label: Miejsce i data, type: string }
+              - { name: w, label: Szerokość miniatury, type: number }
+              - { name: h, label: Wysokość miniatury, type: number }
+
+  - name: nagrania
+    label: Nagrania (YouTube)
+    type: file
+    path: tresc-nagrania.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Napis nad tytułem, type: string }
+      - { name: tytul, label: Tytuł sekcji, type: string }
+      - { name: lead, label: Zdanie pod tytułem, type: text }
+      - { name: kanal, label: Adres kanału, type: string }
+      - name: filmy
+        label: Filmy
+        type: object
+        list: true
+        fields:
+          - { name: yt, label: Identyfikator filmu, type: string, description: "To, co w linku po v=" }
+          - { name: tytul_widoczny, label: Tytuł, type: string }
+          - { name: miejsce, label: Miejsce, type: string }
+          - { name: tytul, label: Tytuł (dla odtwarzacza), type: string, hidden: true }
+          - { name: miejsce_atrybut, label: Miejsce (dla odtwarzacza), type: string, hidden: true }
+
+  - name: kalendarium
+    label: Historia (oś czasu)
+    type: file
+    path: tresc-kalendarium.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Napis nad tytułem, type: string }
+      - { name: tytul, label: Tytuł sekcji, type: string }
+      - name: wpisy
+        label: Wpisy
+        type: object
+        list: true
+        fields:
+          - { name: rok, label: Rok, type: string, description: "Zostaw puste, by wpis nie miał roku" }
+          - { name: tytul, label: Nagłówek, type: string }
+          - { name: opis, label: Opis, type: text }
+          - { name: wyroznione, label: Różowa kropka, type: boolean }
+          - { name: duza_kropka, label: Duża kropka (ostatni wpis), type: boolean }
+
+  - name: repertuar
+    label: Repertuar
+    type: file
+    path: tresc-repertuar.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Napis nad tytułem, type: string }
+      - { name: tytul, label: Tytuł sekcji, type: string }
+      - name: karty
+        label: Karty
+        type: object
+        list: true
+        fields:
+          - { name: nr, label: Znak, type: string }
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: opis, label: Opis, type: text }
+
+  - name: strona
+    label: Strona główna i stopka
+    type: file
+    path: tresc-strona.json
+    format: json
+    fields:
+      - { name: meta_tytul, label: Tytuł strony (zakładka, Google), type: string }
+      - { name: meta_opis, label: Opis strony (Google), type: text }
+      - { name: hero_tag, label: Napis nad tytułem, type: string }
+      - { name: hero_tytul, label: Tytuł główny, type: string }
+      - { name: hero_btn1, label: Przycisk 1, type: string }
+      - { name: hero_btn2, label: Przycisk 2, type: string }
+      - { name: foto_hero, label: Zdjęcie główne, type: image }
+      - { name: manifest_eyebrow, label: "Kim jesteśmy — napis", type: string }
+      - { name: manifest_tytul, label: "Kim jesteśmy — hasło", type: string }
+      - { name: manifest_meta, label: "Kim jesteśmy — podpis", type: string }
+      - { name: cytat, label: Cytat na zdjęciu, type: text }
+      - { name: cytat_podpis, label: Podpis cytatu, type: string }
+      - { name: foto_scena, label: Zdjęcie przy cytacie, type: image }
+      - { name: stopka_copy, label: Stopka, type: string }
+
+  - name: kurnik
+    label: "Zespół — nagłówek"
+    type: file
+    path: tresc-kurnik.json
+    format: json
+    fields:
+      - { name: kurnik_eyebrow, label: Napis nad tytułem, type: string }
+      - { name: kurnik_tytul, label: Tytuł, type: string }
+      - { name: kurnik_lead, label: Zdanie pod tytułem, type: text }
+
+  - name: dyrygentka
+    label: "Dyrygentka — tekst"
+    type: file
+    path: tresc-dyrygentka.json
+    format: json
+    fields:
+      - { name: dyr_eyebrow, label: Napis nad tytułem, type: string }
+      - { name: dyr_tytul, label: Imię i nazwisko, type: string }
+      - { name: dyr_rola, label: Rola, type: string }
+      - { name: foto_dyrygentki, label: Zdjęcie, type: image }
+      - { name: dyr_tekst, label: Tekst, type: text, description: "Akapity w znacznikach <p>…</p>" }
+
+  - name: o_nas
+    label: "O nas — tekst"
+    type: file
+    path: tresc-o-nas.json
+    format: json
+    fields:
+      - { name: onas_eyebrow, label: Napis nad tytułem, type: string }
+      - { name: onas_tytul, label: Tytuł, type: string }
+      - { name: foto_o_nas, label: Zdjęcie, type: image }
+      - { name: onas_tekst, label: Tekst, type: text, description: "Akapity w znacznikach <p>…</p>" }
+
+  - name: english
+    label: Wersja angielska
+    type: file
+    path: tresc-english.json
+    format: json
+    fields:
+      - { name: en_eyebrow, label: Napis nad tytułem, type: string }
+      - { name: en_tytul, label: Tytuł, type: string }
+      - { name: en_tekst, label: Tekst, type: text, description: "Akapity w znacznikach <p>…</p>" }
+      - { name: en_cta_tytul, label: Zachęta — tytuł, type: string }
+      - { name: en_cta_opis, label: Zachęta — opis, type: text }
+      - { name: en_cta_btn, label: Zachęta — przycisk, type: string }
+
+  - name: formularz
+    label: Formularz kontaktowy
+    type: file
+    path: tresc-formularz.json
+    format: json
+    fields:
+      - { name: form_eyebrow, label: Napis nad tytułem, type: string }
+      - { name: form_tytul, label: Tytuł sekcji, type: string }
+      - { name: form_opis, label: Opis, type: text }
+      - { name: form_naglowek, label: Nagłówek formularza, type: string }
+      - { name: form_podtytul, label: Zdanie pod nagłówkiem, type: string }
