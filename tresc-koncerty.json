@@ -1,0 +1,34 @@
+{
+  "eyebrow": "Gdzie występujemy",
+  "tytul": "Kalendarz<br><em>koncertów</em>",
+  "stopka": "Pod batutą Aleksandry Kopp",
+  "lata": [
+    {
+      "rok": "2027",
+      "koncerty": [
+        {
+          "kiedy": "wiosna",
+          "opis": " · Podkowa Leśna, udział w spektaklu „Posłuchajcie ludzie mojej opowieści”"
+        }
+      ]
+    },
+    {
+      "rok": "2026",
+      "koncerty": [
+        {
+          "kiedy": "20.09.",
+          "opis": " · Milanówek, Festiwal Sploty"
+        },
+        {
+          "kiedy": "12.09.",
+          "opis": " · Otrębusy, Festyn „U nas O.K.!”"
+        },
+        {
+          "kiedy": "06.09.",
+          "opis": " · Brwinów, Dni Brwinowa — występ przed Czesławem Mozilem"
+        }
+      ]
+    }
+  ],
+  "foto_plakat": "a647eacd65.jpg"
+}

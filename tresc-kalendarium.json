@@ -1,0 +1,55 @@
+{
+  "eyebrow": "Kalendarium",
+  "tytul": "Nasza <em>droga</em>",
+  "wpisy": [
+    {
+      "rok": "2013",
+      "wyroznione": true,
+      "duza_kropka": false,
+      "tytul": "Założenie chóru",
+      "opis": "Założycielką chóru jest <strong style=\"color:#fff\">Anna Sobczak</strong>, ówczesna dyrektorka Ośrodka Kultury „Okej” w Brwinowie. Nazwę „Chór Wydartych Domom Kur” wymyśliła współzałożycielka <strong style=\"color:#fff\">Anna Żaczek-Siwczuk</strong>. Pierwszą dyrygentką zostaje Aleksandra Kopp związana wówczas z Zespołem „Mazowsze”."
+    },
+    {
+      "rok": "2016",
+      "wyroznione": true,
+      "duza_kropka": false,
+      "tytul": "Pierwsze nagrody ogólnopolskie",
+      "opis": "Srebrne Pasmo w Chełmnie. Brązowe Pasmo w Rzeszowie i Goniądzu z nagrodą Dyrektora Parku Biebrzańskiego. Wyróżnienie w Pruszkowie."
+    },
+    {
+      "rok": "",
+      "wyroznione": false,
+      "duza_kropka": false,
+      "tytul": "Michał Haber",
+      "opis": "Wieloletni śpiewak i tancerz PZPiT Mazowsze, kierownik chórów w Brwinowie i Warszawie, przejmuje prowadzenie."
+    },
+    {
+      "rok": "2020",
+      "wyroznione": true,
+      "duza_kropka": false,
+      "tytul": "Wilno",
+      "opis": "Pierwszy zagraniczny koncert — repertuar kolędowy w barokowym Kościele Wniebowzięcia NMP w Wilnie."
+    },
+    {
+      "rok": "",
+      "wyroznione": false,
+      "duza_kropka": false,
+      "tytul": "Artur Małecki",
+      "opis": "Za pulpitem staje dyrygent chóru Reprezentacyjnego Zespołu Artystycznego Wojska Polskiego."
+    },
+    {
+      "rok": "2024",
+      "wyroznione": true,
+      "duza_kropka": false,
+      "tytul": "Warszawska Jesień",
+      "opis": "Udział w spektaklu „Pieśni codzienności — nigunim”. ChWDK wspiera akcję „Muzyka – wsparcie osób w depresji” organizowaną przez Fundację Chórtownia."
+    },
+    {
+      "rok": "2026",
+      "wyroznione": true,
+      "duza_kropka": true,
+      "tytul": "Aleksandra Kopp wraca",
+      "opis": "Aleksandra Kopp ponownie staje za pulpitem. ChWDK śpiewa dalej z tym samym sercem i coraz większymi ambicjami."
+    }
+  ]
+}

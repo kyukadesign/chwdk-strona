@@ -1,0 +1,36 @@
+{
+  "eyebrow": "Repertuar",
+  "tytul": "Co śpiewamy",
+  "karty": [
+    {
+      "nr": "&hearts;",
+      "nazwa": "Muzyka ludowa",
+      "opis": "Pieśni z polskiej tradycji — od regionów po muzykę słowiańską. Brzmiące współcześnie, głęboko osadzone."
+    },
+    {
+      "nr": "&hearts;",
+      "nazwa": "Piosenki warszawskie",
+      "opis": "Klimat przedwojennej Warszawy, tęsknota i serce. Repertuar bliski Mazowszu."
+    },
+    {
+      "nr": "&hearts;",
+      "nazwa": "Musical i film",
+      "opis": "Wielkie melodie w chóralnych aranżacjach — repertuar, który publiczność pamięta."
+    },
+    {
+      "nr": "&hearts;",
+      "nazwa": "Kolędy i pastorałki",
+      "opis": "Wielokrotnie nagradzany repertuar świąteczny — od tradycyjnych po rzadziej śpiewane perełki."
+    },
+    {
+      "nr": "&hearts;",
+      "nazwa": "Muzyka współczesna",
+      "opis": "Spektakl na Warszawskiej Jesieni. Jesteśmy otwarte na nowe języki muzyczne."
+    },
+    {
+      "nr": "&hearts;",
+      "nazwa": "Pieśni patriotyczne",
+      "opis": "Śpiewane z należytą powagą jako część polskiego dziedzictwa, stosownie do okazji."
+    }
+  ]
+}

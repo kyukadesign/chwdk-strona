@@ -1,0 +1,255 @@
+{
+  "eyebrow": "Galeria",
+  "tytul": "„Hej, kie jo <em>se zaśpiewom”</em>",
+  "lead": "Zdjęcia z koncertów 2026.",
+  "albumy": [
+    {
+      "tytul": "Festyn w Otrębusach",
+      "podtytul": "12 września 2026",
+      "zdjecia": [
+        {
+          "duzy": "gal-ot01-d.jpg",
+          "opis": "Występ na scenie festynu",
+          "miejsce": "Otrębusy · 12 września 2026",
+          "maly": "gal-ot01.jpg",
+          "w": 860,
+          "h": 573
+        },
+        {
+          "duzy": "gal-ot02-d.jpg",
+          "opis": "W trakcie śpiewania",
+          "miejsce": "Otrębusy · 12 września 2026",
+          "maly": "gal-ot02.jpg",
+          "w": 860,
+          "h": 573
+        },
+        {
+          "duzy": "gal-ot03-d.jpg",
+          "opis": "Scena i publiczność",
+          "miejsce": "Otrębusy · 12 września 2026",
+          "maly": "gal-ot03.jpg",
+          "w": 860,
+          "h": 573
+        },
+        {
+          "duzy": "gal-ot04-d.jpg",
+          "opis": "Chór na scenie",
+          "miejsce": "Otrębusy · 12 września 2026",
+          "maly": "gal-ot04.jpg",
+          "w": 860,
+          "h": 573
+        },
+        {
+          "duzy": "gal-ot05-d.jpg",
+          "opis": "Przy mikrofonach",
+          "miejsce": "Otrębusy · 12 września 2026",
+          "maly": "gal-ot05.jpg",
+          "w": 860,
+          "h": 573
+        }
+      ]
+    },
+    {
+      "tytul": "Dni Brwinowa",
+      "podtytul": "6 września 2026",
+      "zdjecia": [
+        {
+          "duzy": "gal-m01-d.jpg",
+          "opis": "Chór na scenie",
+          "miejsce": "Dni Brwinowa · 6 września 2026",
+          "maly": "gal-m01.jpg",
+          "w": 860,
+          "h": 860
+        },
+        {
+          "duzy": "gal-m02-d.jpg",
+          "opis": "Scena podczas koncertu",
+          "miejsce": "Dni Brwinowa · 6 września 2026",
+          "maly": "gal-m02.jpg",
+          "w": 860,
+          "h": 860
+        },
+        {
+          "duzy": "gal-m03-d.jpg",
+          "opis": "W trakcie występu",
+          "miejsce": "Dni Brwinowa · 6 września 2026",
+          "maly": "gal-m03.jpg",
+          "w": 860,
+          "h": 860
+        },
+        {
+          "duzy": "gal-m04-d.jpg",
+          "opis": "Chór pod batutą dyrygentki",
+          "miejsce": "Dni Brwinowa · 6 września 2026",
+          "maly": "gal-m04.jpg",
+          "w": 860,
+          "h": 860
+        },
+        {
+          "duzy": "gal-m05-d.jpg",
+          "opis": "Selfie Czesława Mozila z chórem",
+          "miejsce": "Dni Brwinowa · 6 września 2026",
+          "maly": "gal-m05.jpg",
+          "w": 625,
+          "h": 860
+        },
+        {
+          "duzy": "gal-m06-d.jpg",
+          "opis": "Wspólne granie i śpiewanie",
+          "miejsce": "Dni Brwinowa · 6 września 2026",
+          "maly": "gal-m06.jpg",
+          "w": 860,
+          "h": 860
+        },
+        {
+          "duzy": "gal-m07-d.jpg",
+          "opis": "Finał koncertu",
+          "miejsce": "Dni Brwinowa · 6 września 2026",
+          "maly": "gal-m07.jpg",
+          "w": 860,
+          "h": 860
+        }
+      ]
+    },
+    {
+      "tytul": "Dni Piastowa",
+      "podtytul": "9 maja 2026",
+      "zdjecia": [
+        {
+          "duzy": "gal-p01-d.jpg",
+          "opis": "Chór na scenie, Dni Piastowa",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p01.jpg",
+          "w": 860,
+          "h": 645
+        },
+        {
+          "duzy": "gal-p02-d.jpg",
+          "opis": "Za kulisami, na chwilę przed wyjściem na scenę",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p02.jpg",
+          "w": 645,
+          "h": 860
+        },
+        {
+          "duzy": "gal-p03-d.jpg",
+          "opis": "Występ z zespołem",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p03.jpg",
+          "w": 860,
+          "h": 645
+        },
+        {
+          "duzy": "gal-p04-d.jpg",
+          "opis": "Logo chóru na koszulach",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p04.jpg",
+          "w": 645,
+          "h": 860
+        },
+        {
+          "duzy": "gal-p05-d.jpg",
+          "opis": "Śpiew przy mikrofonach",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p05.jpg",
+          "w": 860,
+          "h": 645
+        },
+        {
+          "duzy": "gal-p06-d.jpg",
+          "opis": "Rozgrzewka w sali prób",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p06.jpg",
+          "w": 645,
+          "h": 860
+        },
+        {
+          "duzy": "gal-p07-d.jpg",
+          "opis": "Wieczorny koncert",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p07.jpg",
+          "w": 860,
+          "h": 645
+        },
+        {
+          "duzy": "gal-p08-d.jpg",
+          "opis": "Na scenie Miejskiego Ośrodka Kultury",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p08.jpg",
+          "w": 645,
+          "h": 860
+        },
+        {
+          "duzy": "gal-p09-d.jpg",
+          "opis": "W drodze na scenę",
+          "miejsce": "Dni Piastowa · maj 2026",
+          "maly": "gal-p09.jpg",
+          "w": 645,
+          "h": 860
+        }
+      ]
+    },
+    {
+      "tytul": "Otwarte Ogrody",
+      "podtytul": "Milanówek · Podkowa Leśna · Brwinów · czerwiec 2026",
+      "zdjecia": [
+        {
+          "duzy": "gal-o01-d.jpg",
+          "opis": "Śpiew w ogrodzie",
+          "miejsce": "Otwarte Ogrody · czerwiec 2026",
+          "maly": "gal-o01.jpg",
+          "w": 860,
+          "h": 645
+        },
+        {
+          "duzy": "gal-o02-d.jpg",
+          "opis": "Selfie w kręgu",
+          "miejsce": "Otwarte Ogrody · czerwiec 2026",
+          "maly": "gal-o02.jpg",
+          "w": 645,
+          "h": 860
+        },
+        {
+          "duzy": "gal-o03-d.jpg",
+          "opis": "Koncert pod batutą Aleksandry Kopp",
+          "miejsce": "Otwarte Ogrody · czerwiec 2026",
+          "maly": "gal-o03.jpg",
+          "w": 860,
+          "h": 645
+        },
+        {
+          "duzy": "gal-o04-d.jpg",
+          "opis": "Przerwa w oranżerii",
+          "miejsce": "Otwarte Ogrody · czerwiec 2026",
+          "maly": "gal-o04.jpg",
+          "w": 645,
+          "h": 860
+        },
+        {
+          "duzy": "gal-o05-d.jpg",
+          "opis": "Koncert dla publiczności w ogrodzie",
+          "miejsce": "Otwarte Ogrody · czerwiec 2026",
+          "maly": "gal-o05.jpg",
+          "w": 860,
+          "h": 573
+        },
+        {
+          "duzy": "gal-o06-d.jpg",
+          "opis": "Chórzystki w oranżerii",
+          "miejsce": "Otwarte Ogrody · czerwiec 2026",
+          "maly": "gal-o06.jpg",
+          "w": 645,
+          "h": 860
+        },
+        {
+          "duzy": "gal-o07-d.jpg",
+          "opis": "Chór w pełnym składzie na trawie",
+          "miejsce": "Otwarte Ogrody · czerwiec 2026",
+          "maly": "gal-o07.jpg",
+          "w": 860,
+          "h": 573
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "dyrygentka": {
+    "imie": "Aleksandra Kopp",
+    "rola": "dyrygentka",
+    "foto": "c-oladyr.png"
+  },
+  "chor": [
+    {
+      "imie": "Alicja",
+      "glos": "sopran",
+      "foto": null,
+      "rot": -2.5,
+      "dy": -2,
+      "kolor": 0,
+      "grzebien": 1,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Jagoda",
+      "glos": "sopran",
+      "foto": "c-jagoda.png",
+      "rot": 1.6,
+      "dy": 3,
+      "kolor": 1,
+      "grzebien": 0,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Kasia",
+      "glos": "sopran",
+      "foto": "c-kasiam.png",
+      "rot": -1.0,
+      "dy": -5,
+      "kolor": 2,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 1
+    },
+    {
+      "imie": "Kasia",
+      "glos": "sopran",
+      "foto": "c-kasiaw.png",
+      "rot": 2.0,
+      "dy": 1,
+      "kolor": 3,
+      "grzebien": 0,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Małgosia",
+      "glos": "sopran",
+      "foto": "c-malgosia.png",
+      "rot": -1.6,
+      "dy": 4,
+      "kolor": 0,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Marta",
+      "glos": "sopran",
+      "foto": null,
+      "rot": 0.6,
+      "dy": -2,
+      "kolor": 1,
+      "grzebien": 1,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Stella",
+      "glos": "sopran",
+      "foto": "c-stella.png",
+      "rot": -2.0,
+      "dy": 2,
+      "kolor": 2,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Agata",
+      "glos": "mezzosopran",
+      "foto": "c-agatao.png",
+      "rot": 1.2,
+      "dy": -4,
+      "kolor": 3,
+      "grzebien": 0,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Ania",
+      "glos": "mezzosopran",
+      "foto": null,
+      "rot": -1.4,
+      "dy": 2,
+      "kolor": 0,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 1
+    },
+    {
+      "imie": "Dobrochna",
+      "glos": "mezzosopran",
+      "foto": null,
+      "rot": 2.4,
+      "dy": -1,
+      "kolor": 1,
+      "grzebien": 1,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Dorota",
+      "glos": "mezzosopran",
+      "foto": "c-dorota.png",
+      "rot": -0.6,
+      "dy": 5,
+      "kolor": 2,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Ela",
+      "glos": "mezzosopran",
+      "foto": "c-ela.png",
+      "rot": -2.2,
+      "dy": 1,
+      "kolor": 0,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Inka",
+      "glos": "mezzosopran",
+      "foto": "c-inka.png",
+      "rot": 0.6,
+      "dy": 3,
+      "kolor": 1,
+      "grzebien": 0,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Magda",
+      "glos": "mezzosopran",
+      "foto": "c-magdat.png",
+      "rot": -1.0,
+      "dy": -2,
+      "kolor": 2,
+      "grzebien": 1,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Agata",
+      "glos": "alt",
+      "foto": null,
+      "rot": 2.0,
+      "dy": 2,
+      "kolor": 3,
+      "grzebien": 0,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Ania",
+      "glos": "alt",
+      "foto": null,
+      "rot": -1.6,
+      "dy": -4,
+      "kolor": 0,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Basia",
+      "glos": "alt",
+      "foto": "c-basia.png",
+      "rot": 1.0,
+      "dy": 1,
+      "kolor": 1,
+      "grzebien": 0,
+      "odbicie": 1,
+      "skrzydlo": 1
+    },
+    {
+      "imie": "Bożenka",
+      "glos": "alt",
+      "foto": null,
+      "rot": -2.5,
+      "dy": -1,
+      "kolor": 2,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Dorota",
+      "glos": "alt",
+      "foto": null,
+      "rot": 1.4,
+      "dy": 4,
+      "kolor": 3,
+      "grzebien": 1,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Kamila",
+      "glos": "alt",
+      "foto": "c-kamila.png",
+      "rot": -1.0,
+      "dy": -3,
+      "kolor": 0,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Karolina",
+      "glos": "alt",
+      "foto": "c-karolina.png",
+      "rot": -1.4,
+      "dy": -3,
+      "kolor": 2,
+      "skrzydlo": 0,
+      "odbicie": 1,
+      "grzebien": 0
+    },
+    {
+      "imie": "Magda",
+      "glos": "alt",
+      "foto": null,
+      "rot": 0.6,
+      "dy": 0,
+      "kolor": 1,
+      "grzebien": 0,
+      "odbicie": 1,
+      "skrzydlo": 0
+    },
+    {
+      "imie": "Ola",
+      "glos": "alt",
+      "foto": "c-olan.png",
+      "rot": -2.0,
+      "dy": 2,
+      "kolor": 2,
+      "grzebien": 0,
+      "odbicie": 0,
+      "skrzydlo": 0
+    }
+  ]
+}

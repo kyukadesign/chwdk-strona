@@ -1,0 +1,57 @@
+{
+  "eyebrow": "Posłuchaj nas",
+  "tytul": "Jak <em>brzmimy</em>",
+  "lead": "Nagrania z Otwartych Ogrodów 2026 — Milanówek i Podkowa Leśna. Pieśni z gór, a cappella i z akompaniamentem.",
+  "kanal": "https://www.youtube.com/@chorwydartychdomomkur6706",
+  "filmy": [
+    {
+      "yt": "9oScq5ael9s",
+      "tytul": "Reportaż z Otwartych Ogrodów",
+      "miejsce_atrybut": "Podkowa Leśna · realizacja Ewa Gola",
+      "tytul_widoczny": "Reportaż z Otwartych Ogrodów",
+      "miejsce": "Podkowa Leśna · realizacja Ewa Golis"
+    },
+    {
+      "yt": "89w16tSKvzk",
+      "tytul": "Hej Skoda",
+      "miejsce_atrybut": "Milanówek",
+      "tytul_widoczny": "Ej, skoda",
+      "miejsce": "Milanówek"
+    },
+    {
+      "yt": "OLZ3QUiLgJg",
+      "tytul": "Piyrso godzina",
+      "miejsce_atrybut": "Milanówek",
+      "tytul_widoczny": "Piyrso Godzina",
+      "miejsce": "Milanówek"
+    },
+    {
+      "yt": "Pua_ksc1Tx8",
+      "tytul": "Górole, górole",
+      "miejsce_atrybut": "Milanówek",
+      "tytul_widoczny": "Górole, Górole",
+      "miejsce": "Milanówek"
+    },
+    {
+      "yt": "cS69qde7KHA",
+      "tytul": "Hej, kie jo se zaśpiewom",
+      "miejsce_atrybut": "Milanówek",
+      "tytul_widoczny": "Hej Kiejo",
+      "miejsce": "Milanówek"
+    },
+    {
+      "yt": "waHOk4bjIwQ",
+      "tytul": "Idzie dysc",
+      "miejsce_atrybut": "Milanówek",
+      "tytul_widoczny": "Idzie Dysc",
+      "miejsce": "Milanówek"
+    },
+    {
+      "yt": "qO7svHCsEWU",
+      "tytul": "Rycerz",
+      "miejsce_atrybut": "Milanówek",
+      "tytul_widoczny": "Rycerz",
+      "miejsce": "z repertuaru Basi Giewont, aranżacja: Michał Haber"
+    }
+  ]
+}
