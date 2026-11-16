@@ -1,7 +1,8 @@
 {
   "eyebrow": "Gdzie występujemy",
   "tytul": "Kalendarz<br><em>koncertów</em>",
-  "stopka": "Pod batutą Aleksandry Kopp",
+  "foto_plakat": "a647eacd65.jpg",
+  "stopka": "Pod batutą Aleksandry Kopp.",
   "lata": [
     {
       "rok": "2027",
@@ -29,6 +30,5 @@
         }
       ]
     }
-  ],
-  "foto_plakat": "a647eacd65.jpg"
+  ]
 }
