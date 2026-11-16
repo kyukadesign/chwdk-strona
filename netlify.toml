@@ -1,7 +1,7 @@
-# Strona jest zwykłym plikiem HTML — Netlify nic nie buduje, tylko publikuje ten folder.
+# Netlify: przed opublikowaniem strony składa index.html z plików tresc-*.json.
 [build]
+  command = "python3 build.py index.html"
   publish = "."
-  command = ""
 
 # przewodnik dla edytujących nie musi być publicznie dostępny
 [[redirects]]
